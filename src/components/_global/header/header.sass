@@ -1,0 +1,280 @@
+header
+	position: fixed
+	z-index: 20
+	top: 0
+	left: 0
+	width: 100%
+	background-color: rgba(#111111,.5)
+	@media screen and ( max-width: 1280px )
+		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.05)
+	.header
+		height: 90px
+		display: flex
+		align-items: center
+		justify-content: space-between
+		.header_main
+			.header_menu
+				display: flex
+				align-items: center
+				.search-icon
+					cursor: pointer
+					span
+						font-size: 20px
+						&:hover
+							color: #91002b
+		.header_infor
+			display: flex
+			justify-content: flex-end
+			padding-bottom: 15px
+			.hotline_box
+				padding-top: 5px
+				ul.tel
+					list-style: none
+					padding: 0
+					display: flex
+					li
+						display: flex
+						position: relative
+						padding: 0 15px
+						&::before
+							content: '|'
+							position: absolute
+							top: 0
+							left: 0
+							color: #91002b
+						&:first-child
+							padding-left: 0
+							&::before
+								display: none
+						.icon-tel
+							span
+								font-size: 18px
+								color: #cccccc
+								padding-right: 10px
+						.text-tel
+							a
+								font-size: 14px
+								color: #ffffff
+						.text-mail
+							display: contents
+							font-size: 14px
+							color: #ffffff
+			.search-icon
+				display: flex
+				justify-content: center
+				align-items: center
+				cursor: pointer
+				span
+					font-size: 18px
+					color: #cccccc
+			.language
+				display: flex
+				align-items: center
+				position: relative
+				font-size: 14px
+				cursor: pointer
+				color: #cccccc
+				padding-left: 10px
+				margin-right: -10px
+				&:hover
+					ul
+						display: unset
+				ul
+					display: none
+					list-style: none
+					position: absolute
+					top: 30px
+					right: 15px
+					li
+						background-color: none
+						box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.1)
+						a
+							color: #cccccc
+				a.current
+					padding: 5px
+					color: #cccccc
+			.header_btn
+					width: 40px
+					height: 40px
+					margin-left: 15px
+					color: #ffffff
+					cursor: pointer
+					font-size: 20px
+					display: flex
+					justify-content: center
+					align-items: center
+					display: none
+					@media screen and ( max-width: 1280px )
+						display: flex
+	.nav-menu
+		display: flex
+		list-style: none
+		@media screen and ( max-width: 1280px )
+			display: block
+		li
+			padding-right: 40px
+			&:last-child
+				padding-right: 0
+				border-bottom: 0
+				padding-bottom: 0
+			@media screen and ( max-width: 1280px )
+				padding: 15px 0
+				border-bottom: 1px solid #ffffff
+
+			a
+				font-size: 18px
+				font-weight: 500
+				transition: all .2s
+				color: #ffffff
+				font-weight: 600
+				&:hover
+					color: #91002b
+					&:after
+						width: 100%
+			&.active
+				a
+					color: #91002b
+					&:after
+						width: 100%
+	
+	.block_search
+		width: 100%
+		height: 100%
+		background-color: rgba(#111111,.9)
+		position: fixed
+		top: 0
+		left: 0
+		z-index: 10
+		padding: 30px
+		opacity: 0
+		pointer-events: none
+		transform: translateX(20%)
+		transition: all .5s cubic-bezier(.68,-.55,.265,1.55)
+		&.show
+			opacity: 1
+			pointer-events: auto
+			transform: translateX(0)
+		.search-icon
+			position: absolute
+			top: 10px
+			right: 10px
+			cursor: pointer
+			width: 40px
+			height: 40px
+			display: flex
+			justify-content: center
+			align-items: center
+			background-color: #91002b
+			font-size: 20px
+			&:hover
+				color: #91002b
+			span
+				color: #ffffff
+		.search_box
+			position: relative
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			width: 300px
+			height: 40px
+			position: relative
+			input
+				width: 100%
+				height: 100%
+				border: 0
+				background-color: #ffffff
+				padding-left: 10px
+				color: #000000
+				font-size: 16px
+				&::placeholder
+					color: #000000
+					font-size: 16px
+					font-style: italic
+			button
+				position: absolute
+				top: 0
+				right: 0
+				border: 0
+				width: 40px
+				height: 100%
+				background-color: unset
+				font-size: 20px
+				color: #000000
+	.menu_mobile
+		width: 50%
+		height: 100%
+		background-color: rgba(#111111,.9)
+		position: fixed
+		top: 0
+		left: 0
+		z-index: 10
+		padding: 30px
+		opacity: 0
+		pointer-events: none
+		transform: translateX(20%)
+		transition: all .5s cubic-bezier(.68,-.55,.265,1.55)
+		@media screen and ( max-width: 1280px )
+			width: 50%
+		@media screen and ( max-width: 576px )
+			width: 100%
+		.header_btn
+			position: absolute
+			top: 0
+			right: 0
+			width: 40px
+			height: 40px
+			background-color: #91002b
+			color: #fff
+			font-size: 27px
+			display: flex
+			justify-content: center
+			align-items: center
+			cursor: pointer
+		.mobile-wrapper
+			display: flex
+			width: 100%
+			flex-direction: column
+			justify-content: left
+			.nav-menu
+				padding-left: 0
+			.hotline_box
+				ul.tel
+					list-style: none
+					padding: 0
+					li
+						display: flex
+						padding-top: 10px
+						.icon-tel
+							span
+								font-size: 18px
+								color: #cccccc
+								padding-right: 10px
+						.text-tel
+							a
+								font-size: 14px
+								color: #ffffff
+						.text-mail
+							display: contents
+							font-size: 14px
+							color: #ffffff
+	.menu_mobile.show
+		opacity: 1
+		pointer-events: auto
+		transform: translateX(0)
+	.overlay
+		position: fixed
+		display: none
+		width: 100%
+		height: 100%
+		z-index: 9
+		top: 0
+		left: 0
+		background-color: rgba(0,0,0,0.5)
+	.overlay.show
+		@media screen and ( max-width: 1280px )
+			display: block
+
+// .active
+// 	background: rgba(#111111,.9)
+// 	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1)
+	

@@ -1,0 +1,67 @@
+.head-title
+	h1
+		font-size: 36px
+		color: #111111
+		text-align: center
+	h2
+		font-size: 36px
+		color: #111111
+		text-align: center
+	h3
+		font-size: 36px
+		color: #111111
+		text-align: center
+.sub-title
+	h3
+		font-size: 24px
+		color: #ffffff
+		text-transform: uppercase
+
+.tab-menu
+	ul
+		list-style: none
+		padding: 0
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-top: 30px
+		overflow-x: auto
+		@media screen and ( max-width: 576px )
+			justify-content: left
+			li
+				padding-bottom: 15px
+		li
+			padding-right: 25px
+			padding-bottom: 10px
+			position: relative
+			&:last-child
+				padding-right: 0
+			a
+				color: #111111
+				font-size: 18px
+				font-weight: 600
+				white-space: nowrap
+			&.active
+				&::before
+					content: ''
+					position: absolute
+					bottom: 0
+					left: 0
+					width: 42px
+					height: 6px
+					background: #8f052d
+					transform: translateX(100%)
+				a
+					color: #8f052d
+			&:hover
+				&::before
+					content: ''
+					position: absolute
+					bottom: 0
+					left: 0
+					width: 42px
+					height: 6px
+					background: #8f052d
+					transform: translateX(100%)
+				a
+					color: #8f052d

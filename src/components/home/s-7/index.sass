@@ -1,0 +1,220 @@
+.home_s-7
+	padding: 0 0 90px 0
+	@media screen and ( max-width: 1024px)
+		padding: 0 0 40px 0
+	.head-title
+		h2
+			text-align: left
+	.row
+		&.border
+			border-top: 1px solid #dfdfdf
+			padding-top: 80px
+		.col-lg-8
+			.row
+				margin-top: 35px
+				.col-lg-6
+					&:nth-child(2)
+						@media screen and ( max-width: 1023px)
+							margin-top: 30px
+						@media screen and ( max-width: 576px)
+							margin-top: 30px
+		.col-lg-4
+			.row
+				margin-top: 30px
+				.col-lg-6
+					padding: 0
+					&:first-child
+						padding-left: 25px
+					&:last-child
+						padding-left: 15px
+						padding-right: 25px
+					@media screen and ( max-width: 1023px )
+						padding: 0 25px
+						margin-bottom: 30px
+					@media screen and ( max-width: 576px )
+						padding: 0 25px
+						margin-bottom: 30px
+	.item-news-left
+		.card_img
+			a
+				display: block
+				max-width: 100%
+				max-height: 100%
+				width: 100%
+				height: 240px
+				img
+					width: 100%
+					height: 100%
+					object-fit: cover
+		.content-news
+			padding: 20px 0
+			.title-news
+				a
+					font-size: 18px
+					color: #111111
+					font-weight: 700
+					-webkit-box-orient: vertical
+					-webkit-line-clamp: 2
+					-o-text-overflow: ellipsis
+					display: -webkit-box
+					overflow: hidden
+					text-overflow: ellipsis
+					&:hover
+						color: #8f052d
+			.date
+				time
+					font-size: 14px
+					color: #999999
+					padding-top: 10px
+			.title-zone
+				font-size: 16px
+				color: #666666
+				padding-top: 10px
+				-webkit-box-orient: vertical
+				-webkit-line-clamp: 4
+				-o-text-overflow: ellipsis
+				display: -webkit-box
+				overflow: hidden
+				text-overflow: ellipsis
+
+	.item-news-right
+		border-bottom: 1px solid #dfdfdf
+		padding-bottom: 20px
+		padding-top: 20px
+		&:first-child
+			padding-top: 0
+		&:last-child
+			border-bottom: 0
+		.title-news
+			a
+				font-size: 18px
+				color: #111111
+				font-weight: 700
+				-webkit-box-orient: vertical
+				-webkit-line-clamp: 3
+				-o-text-overflow: ellipsis
+				display: -webkit-box
+				overflow: hidden
+				text-overflow: ellipsis
+				&:hover
+					color: #8f052d
+		.date
+			time
+				font-size: 14px
+				color: #999999
+				padding-top: 10px
+	
+	// video
+	.figure-video
+		position: relative
+		margin-top: 35px
+	.wrapper-video
+		a
+			display: block
+			height: 100%
+			img
+				max-width: 100%
+				height: 100%
+				width: 100%
+	.video
+		z-index: 10
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%,-50%)
+		display: flex
+		justify-content: center
+		align-items: center
+		pointer-events: none
+		.icon
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 65px
+			height: 65px
+			margin:  5px 0
+			@media screen and ( max-width: 1280px )
+				width: 46px
+				margin: 5px auto
+				height: 46px
+			@media screen and ( max-width: 576px )
+				width: 32px
+				margin: 5px auto
+				height: 32px
+			img
+				max-width: 100%
+				height: auto
+				display: block
+				margin: 0 auto !important
+	.title-video
+		margin-top: 10px
+		a
+			font-size: 18px
+			color: #111111
+			font-weight: 600
+			-webkit-box-orient: vertical
+			-webkit-line-clamp: 2
+			-o-text-overflow: ellipsis
+			display: -webkit-box
+			overflow: hidden
+			text-overflow: ellipsis
+	// end-video
+
+	.figure-images
+		position: relative
+	.wrapper-img
+		a
+			display: block
+			width: 100%
+			max-width: 100%
+			max-height: 100%
+			height: 110px
+			@media screen and ( max-width: 1024px)
+				height: auto
+			@media screen and ( max-width: 576px)
+				height: auto
+			img
+				height: 100%
+				width: 100%
+				object-fit: cover
+	.images
+		z-index: 10
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%,-50%)
+		display: flex
+		justify-content: center
+		align-items: center
+		pointer-events: none
+		.icon
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 65px
+			height: 65px
+			margin:  5px 0
+			@media screen and ( max-width: 1280px )
+				width: 46px
+				margin: 5px auto
+				height: 46px
+			@media screen and ( max-width: 576px )
+				width: 32px
+				margin: 5px auto
+				height: 32px
+			img
+				max-width: 100%
+				height: auto
+				display: block
+				margin: 0 auto !important
+	.title-img
+		margin-top: 10px
+		a
+			font-size: 14px
+			color: #111111
+			-webkit-box-orient: vertical
+			-webkit-line-clamp: 2
+			-o-text-overflow: ellipsis
+			display: -webkit-box
+			overflow: hidden
+			text-overflow: ellipsis

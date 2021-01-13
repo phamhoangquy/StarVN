@@ -1,0 +1,103 @@
+.home-banner
+	position: relative
+	content-visibility: auto
+	contain-intrinsic-size: 1440px
+	@media screen and ( max-width: 1024px)
+		padding-top: 90px
+	.swiper-slide
+		position: relative
+		&:before
+			z-index: 1
+			pointer-events: none
+			content: ''
+			display: block
+			position: absolute
+			left: 0
+			bottom: 0
+			width: 100%
+			height: 50%
+			background: linear-gradient(180deg,rgba(#000000,0), rgba(#000000,0.3) )
+	.wrapper
+		height: 555px
+		position: relative
+		@media screen and(max-width:1441px)
+			height: 555px
+		@media screen and(max-width:768px)
+			height: 450px
+		@media screen and(max-width:576px)
+			height: 400px
+	.wrapper
+		a
+			height: 555px
+			width: auto
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+		@media screen and(max-width:1441px)
+			a
+				height: 555px
+		@media screen and(max-width:768px)
+			a
+				height: 450px
+		@media screen and(max-width:576px)
+			a
+				height: 400px
+	.caption
+		position: absolute
+		bottom: 190px
+		left: 0
+		z-index: 2
+		transform: translateX(-50%)
+		text-align: left
+		width: 100%
+		left: 50%
+		@media screen and ( max-width: 768px )
+			bottom: 120px
+			.text-banner
+				bottom: -120px !important
+		@media screen and ( max-width: 576px )
+			bottom: 100px
+			.text-banner
+				bottom: -100px !important
+				margin-right: 30px
+
+		.title-caption
+			font-size: 24px
+			color: #ffffff
+			font-weight: 400
+			@media screen and ( max-width: 1024px)
+				font-size: 18px
+			&:first-child
+				font-size: 36px
+				font-weight: 700
+				color: #ffffff
+				@media screen and ( max-width: 1024px)
+					font-size: 24px
+		.learn-more
+			display: flex
+			justify-content: left
+			align-items: center
+			background: #91002b
+			width: 180px
+			height: 50px
+			cursor: pointer
+			margin-top: 30px
+			@media screen and ( max-width: 576px )
+				margin-top: 15px
+			a
+				color: #ffffff
+				font-size: 14px
+				text-transform: uppercase
+				padding-left: 20px
+			&:hover
+				background: #111111
+		.text-banner
+			font-size: 14px
+			color: #ffffff
+			position: absolute
+			bottom: -190px
+			left: auto
+			text-align: left
+			background-color: rgba(#111111,.7)
+			padding: 10px
