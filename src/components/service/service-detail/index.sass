@@ -1,0 +1,256 @@
+.service-detail
+	padding: 60px 0
+	.card-title
+		padding-bottom: 20px
+		h1
+			font-size: 30px
+			color: #333333
+			@media screen and ( max-width: 576px )
+				font-size: 18px
+	.fullcontent
+		.strong
+			font-size: 16px
+			color: #333333
+			font-weight: 700
+			padding: 25px 0
+		p
+			font-size: 16px
+			color: #333333
+			padding-bottom: 25px
+			img
+				padding-top: 25px
+				width: 100%
+		img
+			width: 100%
+
+	// Slide gallery
+	.row
+		display: flex
+		justify-content: center
+		align-items: center
+	.service_detail_slide
+		margin-bottom: 25px
+		position: relative
+		.gallery-top
+			position: relative
+			.swiper-slide
+				width: 100%
+				height: 615px
+				@media screen and ( max-width: 1024px)
+					height: auto
+				img
+					width: 100%
+					height: 100%
+		.gallery-thumbs
+			position: relative
+			margin-top: 20px
+			.swiper-slide
+				overflow: hidden
+				cursor: pointer
+				img
+					width: 100%
+					height: 145px
+					@media screen and ( max-width: 1024px)
+						height: auto
+			// .swiper-slide-thumb-active
+			// 	border: 1px solid #ee202e
+	.swiper-nav
+		position: relative
+		@media screen and ( max-width: 1023px)
+			display: none
+	.nav-arrow-prev,.nav-arrow-next
+		position: absolute
+		width: 40px
+		height: 40px
+		top: -90px
+		transition: .3s all  ease-in-out
+		border: 1px solid #999999
+		cursor: pointer
+		display: flex
+		justify-content: center
+		align-items: center
+		em
+			transition: .3s all  ease-in-out
+			color: #999999
+			font-size: 24px
+		&:hover
+			border: 1px solid #91002b
+			em
+				color: #91002b
+		&:focus
+			outline: none
+	.nav-arrow-next
+		right: -50px
+		@media screen and ( max-width: 767px)
+			right: 15px
+		@media screen and ( max-width: 576px)
+			right: 0
+			
+	.nav-arrow-prev
+		left: -50px
+		@media screen and ( max-width: 767px)
+			left: 15px
+		@media screen and ( max-width: 576px)
+			left: 0
+	// End nút slide
+
+
+// section-2
+.service-detail-2
+	background: #e8f3f3
+	padding: 50px 0
+	.service-detail-2-swiper-wrapper
+		position: relative
+		padding-top: 25px
+	.nav-arrow-prev,.nav-arrow-next
+		position: absolute
+		width: 40px
+		height: 40px
+		bottom: 37%
+		transition: .3s all  ease-in-out
+		border: 1px solid #999999
+		cursor: pointer
+		display: flex
+		justify-content: center
+		align-items: center
+		em
+			transition: .3s all  ease-in-out
+			color: #999999
+			font-size: 24px
+		&:hover
+			border: 1px solid #91002b
+			em
+				color: #91002b
+		&:focus
+			outline: none
+	.nav-arrow-next
+		right: -50px
+		@media screen and ( max-width: 1350px)
+			right: 0
+		@media screen and ( max-width: 767px)
+			right: 0
+		@media screen and ( max-width: 576px)
+			right: 0
+			
+	.nav-arrow-prev
+		left: -50px
+		@media screen and ( max-width: 1350px)
+			left: 0
+		@media screen and ( max-width: 767px)
+			left: 0
+		@media screen and ( max-width: 576px)
+			left: 0
+	.swiper-container
+		margin: 0
+		@media screen and ( max-width: 1350px)
+			margin: 0 50px
+		.wrapper
+			position: relative
+			.card_img
+				a
+					display: block
+					max-width: 100%
+					max-height: 100%
+					width: 100%
+					height: 300px
+					@media screen and ( max-width: 1023px)
+						height: auto
+					@media screen and ( max-width: 576px)
+						height: auto
+					img
+						height: 100%
+						width: 100%
+						object-fit: cover
+			.title-services
+				position: absolute
+				top: 25px
+				left: 25px
+				right: 25px
+				a
+					color: #ffffff
+					font-size: 24px
+					text-transform: uppercase
+					font-weight: 700
+					-webkit-box-orient: vertical
+					-webkit-line-clamp: 3
+					-o-text-overflow: ellipsis
+					display: -webkit-box
+					overflow: hidden
+					text-overflow: ellipsis
+					@media screen and ( max-width: 1280px)
+						font-size: 18px
+					@media screen and ( max-width: 1023px)
+						font-size: 16px
+					&:hover
+						color: #8f052d
+			.title-zone
+				position: absolute
+				top: 60px
+				left: 25px
+				right: 25px
+				ul
+					list-style: none
+					padding: 0
+					li
+						display: flex
+						.icon-h
+							padding-right: 10px
+							span
+								font-size: 14px
+								color: #ffffff
+						p
+							font-size: 14px
+							color: #ffffff
+			.btn-view
+				position: absolute
+				margin: unset
+				bottom: 25px
+				left: 25px
+				background: none
+				border: 1px solid #ffffff
+				&:hover
+					background: #8f052d
+					border: none
+				@media screen and ( max-width: 1023px)
+					width: auto
+					padding-right: 20px
+					height: auto
+					padding-top: 5px
+					padding-bottom: 5px
+
+
+// section-3
+.service-detail-3
+	padding: 60px 0
+	.row
+		display: flex
+		justify-content: center
+		align-items: center
+	.border-detail
+		border: 1px solid #e0e0e0
+		padding: 40px
+	.wrap-form
+		margin-top: 20px
+		input[type='text']
+			background: none
+			border-bottom: 1px solid #e0e0e0
+			padding-left: 0
+			&::placeholder
+				color: #111111
+		textarea
+			background: none
+			border: 1px solid #e0e0e0
+		select
+			display: flex
+			width: 100%
+			background: none
+			font-size: 15px
+			border-top: 0
+			border-right: 0
+			border-left: 0
+			border-bottom: 1px solid #e0e0ee
+			color: #111111
+			padding-left: 0
+	.frm-btnwrap
+		float: left
+		margin-left: 10px

@@ -6,6 +6,7 @@ $(document).ready(function() {
     // swiper
     swiperInit();
     tabActive();
+    serviceDetailSlide();
 });
 
 const InsertBd = () => {
@@ -119,6 +120,47 @@ function mappingMenu() {
 //     });
 // }
 
+
+// Slide product-detail
+function serviceDetailSlide() {
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+        spaceBetween: 20,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+        navigation: {
+            nextEl: '.service_detail_slide .nav-arrow-next',
+            prevEl: '.service_detail_slide .nav-arrow-prev',
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 2,
+            },
+            400: {
+                slidesPerView: 2,
+            },
+            480: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 3,
+            },
+            1025: {
+                slidesPerView: 4,
+            },
+            1440: {
+                slidesPerView: 4,
+            },
+        }
+    });
+    var galleryTop = new Swiper('.gallery-top', {
+        thumbs: {
+            swiper: galleryThumbs
+        },
+    });
+}
+
 function swiperInit() {
     var homerSwiper = new Swiper(".home-banner .swiper-container", {
         // Optional parameters
@@ -175,6 +217,36 @@ function swiperInit() {
             type: "bullets",
             clickable: "true"
         }
+    });
+    var homeSoftwareSwiper = new Swiper(".service-detail-2 .swiper-container", {
+        // Optional parameters
+        speed: 1000,
+        spaceBetween: 10,
+        breakpointsInverse: true,
+        navigation: {
+            nextEl: '.service-detail-2 .nav-arrow-next',
+            prevEl: '.service-detail-2 .nav-arrow-prev',
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            },
+            400: {
+                slidesPerView: 1,
+            },
+            480: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 3,
+            },
+            1025: {
+                slidesPerView: 4,
+            },
+            1440: {
+                slidesPerView: 4,
+            },
+        },
     });
 }
 

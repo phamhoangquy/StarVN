@@ -1,0 +1,93 @@
+section.service-detail
+	.container
+		.card-title
+			h1 Technical & Specialized Translations
+		.fullcontent
+			p Vietnamese shrimp continues to domainate the UK market as of September 15,2020 reached $161.2 miliion, up 15% over same period in 2019Vietnamese shrimp continues to domainate the UK market as of September 15,2020 reached $161.2 miliion, up 15% over same period in 2019.
+			p Vietnamese shrimp continues to domainate the UK market as of SeptemberVietnamese shrimp continues to domainate the UK market as of September 15,2020 reached $161.2 miliion, up 15% over same period in 2019.
+			p Vietnamese shrimp continues to domainate the UK market as of September 15,2020 reached $161.2 miliion, up 15% over same period in 2019.Vietnamese shrimp continues to domainate the UK market as of September 15,2020 reached $161.2 miliion, up 15% over same period in 2019.
+		.row
+			.col-lg-10
+				.service_detail_slide
+					.swiper-container.gallery-top
+						.swiper-wrapper
+							-for(i=0; i<8; i++)
+								.swiper-slide
+									img(src="./img/services/d-1.png", alt="")
+					.swiper-container.gallery-thumbs
+						.swiper-wrapper
+							-for(i=0; i<8; i++)
+								.swiper-slide
+									img(src="./img/services/d-1-small.png", alt="")
+					.swiper-nav
+						.nav-arrow-prev
+							em.ri-arrow-left-s-line
+						.nav-arrow-next
+							em.ri-arrow-right-s-line
+		.fullcontent
+			p Vietnamese shrimp continues to domainate the UK market as of September 15,2020 reached $161.2 miliion, up 15% over same period in 2019Vietnamese shrimp continues to domainate the UK market as of September 15,2020 reached $161.2 miliion, up 15% over same period in 2019.
+			p Vietnamese shrimp continues to domainate the UK market as of SeptemberVietnamese shrimp continues to domainate the UK market as of September 15,2020 reached $161.2 miliion, up 15% over same period in 2019.
+			p Vietnamese shrimp continues to domainate the UK market as of September 15,2020 reached $161.2 miliion, up 15% over same period in 2019.Vietnamese shrimp continues to domainate the UK market as of September 15,2020 reached $161.2 miliion, up 15% over same period in 2019.
+
+section.service-detail-2
+	.container
+		.head-title
+			h2 Related service
+		.service-detail-2-swiper-wrapper
+			.nav-arrow-prev
+				em.ri-arrow-left-s-line
+			.nav-arrow-next
+				em.ri-arrow-right-s-line
+			.swiper-container
+				.swiper-wrapper
+					-for(i=0; i<6; i++)
+						.swiper-slide
+							.wrapper
+								.card_img
+									a(href="#").zoom-in
+										img(src="./img/home/s-3.png", alt="")
+								.title-services
+									a(href="#") Terminology & translation memory management
+								.btn-view
+									.img
+										img(src="./img/home/h-icon.png", alt="")
+									a(href="#") Learn more
+
+section.service-detail-3
+	.container
+		.row
+			.col-lg-10.border-detail
+				.head-title
+					h2 Request a Quote form
+				.wrap-form
+					.row
+						.form-group.col-12.col-md-6.col-6
+							input.form-control(type='text', placeholder="First name*")
+						.form-group.col-12.col-md-6.col-6
+							input.form-control(type='text',placeholder="Last name*")
+						.form-group.col-12.col-md-6.col-6
+							input.form-control(type='text',placeholder="Company")
+						.form-group.col-12.col-md-6.col-6
+							input.form-control(type='text',placeholder="Adress")
+						.form-group.col-12.col-md-6.col-6
+							select
+								option Country
+						.form-group.col-12.col-md-6.col-6
+							select
+								option City
+						.form-group.col-12.col-md-6.col-6
+							input.form-control(type='text',placeholder="Phone*")
+						.form-group.col-12.col-md-6.col-6
+							input.form-control(type='text',placeholder="Fax")
+						.form-group.col-12.col-md-6.col-6
+							input.form-control(type='text',placeholder="Email*")
+						.form-group.col-12.col-md-6.col-6
+							input.form-control(type='text',placeholder="Website")
+						.form-group.col-12
+							label(for="") Please enter your question: *
+							textarea#inpputTextArea.form-control(rows='3',placeholder="")
+					.frm-btnwrap
+						//- .frm-file
+						//- 	input(type="file" value="UPDATELOAD FILE")
+						.frm-btn
+							input(type="submit" value ="SUBMIT")
