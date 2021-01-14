@@ -7,6 +7,31 @@ header
 	background-color: rgba(#111111,.5)
 	@media screen and ( max-width: 1280px )
 		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.05)
+		background: #ffffff
+		.header
+			.header_main
+				.header_infor
+					.hotline_box
+						ul
+							li
+								.text-tel
+									a
+										color: #666666
+								.text-mail
+									color: #666666
+					.search-icon
+						span
+							color: #666666
+					.language
+						ul
+							li
+								a
+									color: #666666
+						a.current
+							color:#666666
+					.header_btn
+						span
+							color: #666666
 	.header
 		height: 90px
 		display: flex
@@ -16,12 +41,6 @@ header
 			.header_menu
 				display: flex
 				align-items: center
-				.search-icon
-					cursor: pointer
-					span
-						font-size: 20px
-						&:hover
-							color: #91002b
 		.header_infor
 			display: flex
 			justify-content: flex-end
@@ -94,18 +113,18 @@ header
 					padding: 5px
 					color: #cccccc
 			.header_btn
-					width: 40px
-					height: 40px
-					margin-left: 15px
-					color: #ffffff
-					cursor: pointer
-					font-size: 20px
+				width: 40px
+				height: 40px
+				margin-left: 15px
+				color: #ffffff
+				cursor: pointer
+				font-size: 20px
+				display: flex
+				justify-content: center
+				align-items: center
+				display: none
+				@media screen and ( max-width: 1280px )
 					display: flex
-					justify-content: center
-					align-items: center
-					display: none
-					@media screen and ( max-width: 1280px )
-						display: flex
 	.nav-menu
 		display: flex
 		list-style: none
@@ -127,15 +146,14 @@ header
 				transition: all .2s
 				color: #ffffff
 				font-weight: 600
-				&:hover
-					color: #91002b
-					&:after
-						width: 100%
+			&:hover
+				a
+					color: #8f052d
+					border-bottom: 1px solid #8f052d
 			&.active
 				a
-					color: #91002b
-					&:after
-						width: 100%
+					color: #8f052d 
+					border-bottom: 1px solid #8f052d
 	
 	.block_search
 		width: 100%
@@ -274,7 +292,38 @@ header
 		@media screen and ( max-width: 1280px )
 			display: block
 
-// .active
-// 	background: rgba(#111111,.9)
-// 	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1)
-	
+.active
+	background: #ffffff
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.8)
+	.header
+		.header_main
+			.header_infor
+				.hotline_box
+					ul
+						li
+							.text-tel
+								a
+									color: #666666
+							.text-mail
+								color: #666666
+				.search-icon
+					span
+						color: #666666
+				.language
+					a
+						color: #666666
+				.header_btn
+					span
+						color: #666666
+	.nav-menu
+		li
+			a
+				color: #111111
+			&:hover
+				a
+					color: #8f052d
+					border-bottom: 1px solid #8f052d
+			&.active
+				a
+					color: #8f052d 
+					border-bottom: 1px solid #8f052d

@@ -1,47 +1,46 @@
-// a 
-// 	+hover-underline(95%, #2d88ff)
-// .news-list
-// 	+gg-speed(auto, 1410px)
-
-.zoom-in
-	overflow: hidden
-	transition: .3s all ease-in-out
-	&:hover
-		img
-			transform: scale(1.13)
-	img
-		transform: scale(1)
-		transition: .3s all ease-in-out
-
-.opacity
-	transition: .3s all ease-in-out
-	&:hover
-		opacity: .7
-	img
-		opacity: 1
-		transition: .3s all ease-in-out
-
-.tab-wrapper
-	.tab-item
-		display: none
-		&.active
-			display: block
-
-.btn-view
-	display: flex
-	justify-content: left
-	align-items: center
-	background: #91002b
-	width: 180px
-	height: 50px
-	cursor: pointer
-	margin-top: 30px
-	@media screen and ( max-width: 576px )
-		margin-top: 15px
-	a
-		color: #ffffff
-		font-size: 14px
-		text-transform: uppercase
-		padding-left: 20px
-	&:hover
-		background: #111111
+.news-detail-page
+	header
+		background: #ffffff
+		.header
+			.header_main
+				.header_infor
+					.hotline_box
+						ul
+							li
+								.text-tel
+									a
+										color: #666666
+								.text-mail
+									color: #666666
+					.search-icon
+						span
+							color: #666666
+					.language
+						a
+							color: #666666
+					.header_btn
+						span
+							color: #666666
+			.nav-menu
+				li
+					a
+						color: #111111
+					&:hover
+						a
+							color: #8f052d
+							border-bottom: 1px solid #8f052d
+					&.active
+						a
+							color: #8f052d 
+							border-bottom: 1px solid #8f052d
+	main
+		padding-top: 90px
+	.global-breadcrumb
+		margin-top: 0
+		background: rgba(#f3f3f3,.7)
+		ol
+			li
+				a
+					color: #111111
+				&.active
+					color: #111111

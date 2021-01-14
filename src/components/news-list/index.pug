@@ -1,0 +1,47 @@
+section.news-list
+	.container
+		.head-title
+			h1 News/ Events
+		.tab-menu
+			ul
+				li.active
+					a(href="#") News
+				li
+					a(href="#") Events
+		.row
+			.col-lg-6
+				.big-news
+					.card_img
+						a(href="#").zoom-in
+							img(src="./img/home/news.png", alt="")
+					.content-news
+						.title-news
+							a(href="#") STAR Vietnam donates Translt NXT Conputer-Aided Translation software to HUTECH
+						.date
+							time 10/10/2020
+						.title-zone STAR Vietnam Translation and Software Co., Ltd (a member company of STAR Group - Switzerland) donated STAR Translt NXT to Hochiminh City University of Tenhnology (HUTECH).
+			.col-lg-6
+				-for(i=0;i<4;i++)
+					.small-news
+						.card_img
+							a(href="#").zoom-in
+								img(src="./img/news/small-1.png", alt="")
+						.content-news-small
+							.title-news
+								a(href="#") STAR Group donating STAR Translt NXT to universities in Ho Chi Minh City, VietNam
+							.date
+								time 10/10/2020
+
+		.row
+			-for(i=0;i<3;i++)
+				.col-lg-4
+					.block-news
+						.card_img
+							a(href="#").zoom-in
+								img(src="./img/news/news.png", alt="")
+						.content-news
+							.title-news
+								a(href="#") STAR Vietnam donates Translt NXT Conputer-Aided Translation software to HUTECH
+							.date
+								time 10/10/2020
+							.title-zone STAR Vietnam Translation and Software Co., Ltd (a member company of STAR Group - Switzerland) donated STAR Translt NXT to Hochiminh City University of Tenhnology (HUTECH). 

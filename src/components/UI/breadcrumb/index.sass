@@ -1,5 +1,5 @@
 .global-breadcrumb
-	background: rgba(#e0e5e8,.7)
+	background: rgba(#222222,.7)
 	position: relative
 	z-index: 1
 	margin-top: -40px
@@ -17,16 +17,18 @@
 			line-height: 23px
 			padding-right: 30px
 			position: relative
-			&:after
-				font-size: 14px
-				font-family:  "Material Design Icons"
-				content: '\f142'
-				display: block
-				position: absolute
-				color: #666666
-				right: 5px
-				bottom: 2px
-			&.active
+			&:nth-child(2)
+				padding-right: 15px
+			// &:after
+			// 	font-size: 14px
+			// 	font-family:  "remixicon"
+			// 	content: '\ea54'
+			// 	display: block
+			// 	position: absolute
+			// 	color: #ffffff
+			// 	right: 5px
+			// 	bottom: 2px
+			
 			&:first-child
 				span
 					display: none
@@ -49,12 +51,12 @@
 				&:after
 					display: none
 			&.active
-				color: #666666
+				color: #ffffff
 			a
 				text-decoration: none
 				font-size: 14px
 				line-height: 23px
-				color: #666666
+				color: #ffffff
 	@media screen and(max-width: 1200px)
 		padding: 10px 0
 		margin-bottom: 0
