@@ -1,0 +1,9 @@
+extends _layout.pug
+
+block var
+	- var title = 'Phần mềm chi tiết'
+	- var bodyClass = 'software-detail-page'
+
+block main
+	include ../components/UI/breadcrumb/index
+	include ../components/software/software-detail/index
