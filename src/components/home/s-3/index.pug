@@ -22,6 +22,9 @@ section.home_s-3
 									h3 Business sector
 								.content-h It-related, Computer Software & Hardware, Internet-related
 						.col-lg-9
-							.brand-clients-h
-								.img
-									img(src="./img/home/brand-client-1.png", alt="")
+							.row
+								-for(i=1; i<14; i++)
+									.col
+										.clients-img
+											.img
+												img(src="./img/clients/1.png", alt="")

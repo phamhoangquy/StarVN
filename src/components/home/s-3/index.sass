@@ -1,6 +1,6 @@
 .home_s-3
 	padding: 40px 0
-	.row
+	.tab-wrapper
 		margin-top: 45px
 	.clients-h
 		height: 300px
@@ -28,7 +28,18 @@
 			font-size: 14px
 			color: #ffffff
 			padding-top: 30px
-	.brand-clients-h
+
+	.row
+		margin-right: -5px
+		margin-left: -5px
+		.col
+			flex: 0 0 20%
+			padding: 5px
+			@media screen and (max-width: 768px)
+				flex: 1 0 50%
+	.clients-img
+		padding-bottom: 30px
 		.img
-			img
-				width: 100%
+			display: flex
+			justify-content: center
+			align-items: center

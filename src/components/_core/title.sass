@@ -41,30 +41,29 @@
 				font-size: 18px
 				font-weight: 600
 				white-space: nowrap
+				position: relative
 			&.active
-				position: relative
-				&::before
-					content: ''
-					position: absolute
-					bottom: 0
-					left: 32%
-					width: 40px
-					height: 5px
-					background: #8f052d
 				a
 					color: #8f052d
+					&::before
+						content: ''
+						position: absolute
+						bottom: -12px
+						left: 32%
+						width: 40px
+						height: 5px
+						background: #8f052d
 			&:hover
-				position: relative
-				&::before
-					content: ''
-					position: absolute
-					bottom: 0
-					left: 32%
-					width: 40px
-					height: 5px
-					background: #8f052d
 				a
 					color: #8f052d
+					&::before
+						content: ''
+						position: absolute
+						bottom: -12px
+						left: 32%
+						width: 40px
+						height: 5px
+						background: #8f052d
 
 .srcoll-menu
 	padding-top: 10px
