@@ -65,3 +65,55 @@
 					background: #8f052d
 				a
 					color: #8f052d
+
+.srcoll-menu
+	padding-top: 10px
+	.menu-nav
+		border-bottom: 1px solid #e0e0e0
+		display: flex
+		justify-content: center
+		align-items: center
+		padding-bottom: 5px
+		overflow: auto
+		@media screen and ( max-width: 768px)
+			justify-content: left
+		@media screen and ( max-width: 576px)
+			justify-content: left
+		ul
+			list-style: none
+			padding: 0
+			display: flex
+			li
+				display: flex
+				padding-right: 45px
+				position: relative
+				padding-bottom: 5px
+				&:last-child
+					padding-right: 0
+				a
+					font-size: 18px
+					color: #111111
+					font-weight: 600
+					white-space: nowrap
+				&:hover
+					&::before
+						position: absolute
+						content: ''
+						width: 30px
+						height: 3px
+						background: #91002b
+						bottom: -6px
+						left: 0
+					a
+						color: #91002b
+				&.active
+					&::before
+						position: absolute
+						content: ''
+						width: 30px
+						height: 3px
+						background: #91002b
+						bottom: -6px
+						left: 0
+					a
+						color: #91002b
