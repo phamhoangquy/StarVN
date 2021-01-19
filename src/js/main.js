@@ -7,6 +7,7 @@ $(document).ready(function() {
     swiperInit();
     tabActive();
     serviceDetailSlide();
+    showBackToTop();
 });
 
 const InsertBd = () => {
@@ -49,6 +50,23 @@ function setBackgroundElement() {
             "background-repeat": "repeat"
         });
     });
+}
+
+function showBackToTop() {
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 0) {
+            $('#back-to-top').addClass('active');
+        } else {
+            $('#back-to-top').removeClass('active');
+        }
+    });
+
+    $("#back-to-top").on("click", function(e) {
+        e.preventDefault();
+        $("html,body").animate({
+            scrollTop: 0
+        })
+    })
 }
 
 function tabActive() {
@@ -235,7 +253,7 @@ function swiperInit() {
                 slidesPerView: 1,
             },
             480: {
-                slidesPerView: 2,
+                slidesPerView: 1,
             },
             768: {
                 slidesPerView: 3,

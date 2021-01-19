@@ -62,13 +62,13 @@
 		.btn-view
 			display: flex
 			background: none
-			border: 1px solid #8f052d
 			padding: 12px 0px
 			width: 180px
 			cursor: pointer
-			span
-				margin-left: -3px
-				color: #8f052d
+			border: 1px solid #8f052d
+			.img
+				img
+					filter: brightness(1)
 			a
 				padding-left: 30px
 				color: #8f052d
@@ -78,7 +78,9 @@
 			&:hover
 				background: #8f052d
 				border: 1px solid transparent
-				span
-					color: #ffffff
+
+				.img
+					img
+						filter: brightness(0) invert(1)
 				a
 					color: #ffffff

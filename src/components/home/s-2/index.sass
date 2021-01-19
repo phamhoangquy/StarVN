@@ -79,22 +79,29 @@
 		.btn-view
 			display: flex
 			background: none
-			border: 1px solid #ffffff
 			padding: 12px 0px
 			width: 180px
 			cursor: pointer
+			margin: 0 auto
 			position: absolute
 			bottom: 25px
 			left: 25px
-			span
-				margin-left: -3px
-				color: #ffffff
+			border: 1px solid #ffffff
+			.img
+				img
+					filter: brightness(0) invert(1)
 			a
 				padding-left: 30px
+				color: #ffffff
 				text-transform: uppercase
 				font-weight: 600
 				font-size: 14px
-				color: #ffffff
 			&:hover
 				background: #8f052d
 				border: 1px solid transparent
+
+				.img
+					img
+						filter: brightness(0) invert(1)
+				a
+					color: #ffffff
