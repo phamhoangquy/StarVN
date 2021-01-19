@@ -44,13 +44,51 @@ header
 							a(href="news-list.html") News/ Events
 						li
 							a(href="contact.html") Contact us
-					
+			.request-a-quote
+				span.ri-pencil-fill
+				a(href='javascript:void(0)' data-fancybox="" data-src="#wrap-form") Request a quote
+	#wrap-form.wrap-form
+		.text Request a Quote form
+		.row
+			.form-group.col-12.col-md-6.col-6
+				input.form-control(type='text', placeholder="First name*")
+			.form-group.col-12.col-md-6.col-6
+				input.form-control(type='text',placeholder="Last name*")
+			.form-group.col-12.col-md-6.col-6
+				input.form-control(type='text',placeholder="Company")
+			.form-group.col-12.col-md-6.col-6
+				input.form-control(type='text',placeholder="Adress")
+			.form-group.col-12.col-md-6.col-6
+				select
+					option Country
+			.form-group.col-12.col-md-6.col-6
+				select
+					option City
+			.form-group.col-12.col-md-6.col-6
+				input.form-control(type='text',placeholder="Phone*")
+			.form-group.col-12.col-md-6.col-6
+				input.form-control(type='text',placeholder="Fax")
+			.form-group.col-12.col-md-6.col-6
+				input.form-control(type='text',placeholder="Email*")
+			.form-group.col-12.col-md-6.col-6
+				input.form-control(type='text',placeholder="Website")
+			.form-group.col-12
+				label(for="") Please enter your question: *
+				textarea#inpputTextArea.form-control(rows='3',placeholder="")
+		.frm-btnwrap
+			.frm-file
+				label(for="uploadflie") UPDATELOAD FILE
+				input(type="file" id="uploadflie")
+			.frm-btn
+				input(type="submit" value ="SUBMIT")
+
 	.block_search
 		.search-icon
 			span.ri-close-line
 		.search_box
 			input(type="text" placeholder="Tìm kiếm")
 			button(type="submit").ri-search-line
+
 	.menu_mobile
 		.header_btn
 			span.ri-close-line
