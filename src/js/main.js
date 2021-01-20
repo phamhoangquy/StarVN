@@ -1,4 +1,7 @@
 $(document).ready(function() {
+    AOS.init({
+        disable: "mobile",
+    });
     setBackgroundElement();
     // header
     mappingMenu();
@@ -7,6 +10,7 @@ $(document).ready(function() {
     swiperInit();
     tabActive();
     serviceDetailSlide();
+    srcollMenu();
     showBackToTop();
 });
 
@@ -34,6 +38,13 @@ let header = {
     }
 }
 
+let request = {
+    requestScroll: () => {
+        let heightRequest = $('.requestform').height();
+        $(window).scrollTop() > heightRequest ? $('.requestform').addClass('request-scroll') : $('.requestform').removeClass('request-scroll');
+    }
+}
+
 function setBackgroundElement() {
     $('[setBackground]').each(function() {
         var background = $(this).attr('setBackground')
@@ -49,6 +60,24 @@ function setBackgroundElement() {
             "background-image": "url(" + background + ")",
             "background-repeat": "repeat"
         });
+    });
+}
+
+function srcollMenu() {
+    $(".link-to-srcoll-section a").on("click", function(event) {
+        if (this.hash !== "") {
+            let offset = $("header").outerHeight() + 50;
+            var hash = this.hash;
+            $(this).parent().addClass('active').siblings().removeClass("active")
+            $("html, body").animate({
+                    scrollTop: $(hash).offset().top - offset,
+                },
+                800,
+                function() {
+                    window.location.hash = hash;
+                }
+            );
+        } // End if
     });
 }
 
@@ -270,4 +299,5 @@ function swiperInit() {
 
 $(document).on('scroll', function() {
     header.headerScroll()
+    request.requestScroll()
 });

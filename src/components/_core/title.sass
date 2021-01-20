@@ -67,6 +67,11 @@
 
 .srcoll-menu
 	padding-top: 10px
+	// position: sticky
+	// z-index: 10
+	// width: 100%
+	// top: 90px
+	// background: #ffffff
 	.menu-nav
 		border-bottom: 1px solid #e0e0e0
 		display: flex
@@ -116,3 +121,29 @@
 						left: 0
 					a
 						color: #91002b
+.news-list-page
+	.tab-menu
+		ul
+			li
+				&.active
+					a
+						color: #8f052d
+						&::before
+							content: ''
+							position: absolute
+							bottom: -12px
+							left: 32%
+							width: 20px
+							height: 5px
+							background: #8f052d
+				&:hover
+					a
+						color: #8f052d
+						&::before
+							content: ''
+							position: absolute
+							bottom: -12px
+							left: 32%
+							width: 20px
+							height: 5px
+							background: #8f052d
