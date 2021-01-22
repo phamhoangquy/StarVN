@@ -9,49 +9,70 @@
 		display: flex
 		justify-content: center
 		align-items: center
-	.teamviewer-h
-		background: #f4f4f4
-		padding: 95px 45px
-		img
-			width: 100%
-			@media screen and ( max-width: 1280px)
-				width: auto
+	// .teamviewer-h
+	// 	background: #f4f4f4
+	// 	padding: 95px 45px
+	// 	img
+	// 		width: 100%
+	// 		@media screen and ( max-width: 1280px)
+	// 			width: auto
 
 	.swiper-container
 		// margin: 0
 		// @media screen and ( max-width: 1350px)
 		// 	margin: 0 50px
 	.wrapper
+		display: flex
 		padding: 10px 0 0 0
 		@media screen and ( max-width: 1280px)
 			padding-top: 30px
-		.title-img
-			display: flex
-			justify-content: space-between
-			.title-zone
-				font-size: 24px
-				color: #111111
-				position: relative
-				padding-top: 10px
-				&::before
-					content: ''
-					position: absolute
-					width: 50px
-					height: 3px
-					background: #91002b
-					top: 0
-					left: 0
-			.img-comma
-				display: flex
+		@media screen and ( max-width: 1023px)
+			display: block
+		.car-img
+			a
+				display: block
+				max-width: 100%
+				width: 285px
+				background: #f4f4f4
+				padding: 95px 45px
+				@media screen and ( max-width: 1023px)
+					width: auto
+				img
+					width: 100%
+					height: 100%
+					object-fit: contain
 		.content-teamvie
-			font-size: 14px
-			color: #111111
-			padding-top: 15px
-			
+			padding-left: 30px
+			@media screen and ( max-width: 1023px)
+				padding-left: 0
+				margin-top: 30px
+			.title-img
+				display: flex
+				justify-content: space-between
+				.title-zone
+					font-size: 24px
+					color: #111111
+					position: relative
+					padding-top: 10px
+					&::before
+						content: ''
+						position: absolute
+						width: 50px
+						height: 3px
+						background: #91002b
+						top: 0
+						left: 0
+				.img-comma
+					display: flex
+			.caption
+				p
+					font-size: 14px
+					color: #111111
+					padding-top: 15px
 	.teamviewer-pagination
 		position: unset
 		margin-top: 40px
-		text-align: left
+		text-align: center
 		padding-left: 110px
 		@media screen and ( max-width: 1280px)
 			padding-left: 0

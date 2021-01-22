@@ -27,15 +27,20 @@ section.other-news-detail
 	.container
 		.title-other
 			h2 Related News
-		.row
-			-for(i=0; i<4; i++)
-				.col-lg-3
-					.item-news-other
-						.card-img
-							a(href="#").zoom-in
-								img(src="./img/news/detail-1.png", alt="")
-						.content-news-other
-							.title-news
-								a(href="#") STAR Vietnam donates Transit NXT Computer-Aided Translation software to HUTECH
-							.date
-								time 28/08/2020
+		.news-detail-swiper-wrapper
+			.nav-arrow-prev
+				img(src="./img/home/shape-icon.png", alt="")
+			.nav-arrow-next
+				img(src="./img/home/shape-icon.png", alt="")
+			.swiper-container
+				.swiper-wrapper
+					.swiper-slide
+						.item-news-other
+							.card-img
+								a(href="#").zoom-in
+									img(src="./img/news/detail-1.png", alt="")
+							.content-news-other
+								.title-news
+									a(href="#") STAR Vietnam donates Transit NXT Computer-Aided Translation software to HUTECH
+								.date
+									time 28/08/2020
