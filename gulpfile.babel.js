@@ -1,6 +1,6 @@
 import {
-	series,
-	parallel
+    series,
+    parallel
 } from "gulp";
 
 // Import tasks
@@ -11,27 +11,27 @@ import sassTask from "./_gulptasks/css";
 import jsCore from "./_gulptasks/core-js";
 import cssCore from "./_gulptasks/core-css";
 import {
-	cleanDist
+    cleanDist
 } from "./_gulptasks/clean";
 import {
-	copyFonts,
-	copyImage,
-	copyFavicon
+    copyFonts,
+    copyImage,
+    copyFavicon
 } from "./_gulptasks/copy";
 
 exports.default = series(
-	cleanDist,
-	parallel(
-		copyFavicon,
-		copyImage,
-		copyFonts,
-	),
-	parallel(
-		jsCore,
-		cssCore
-	),
-	sassTask,
-	jsTask,
-	pugTask,
-	server,
+    cleanDist,
+    parallel(
+        copyFavicon,
+        copyImage,
+        copyFonts,
+    ),
+    parallel(
+        jsCore,
+        cssCore
+    ),
+    sassTask,
+    jsTask,
+    pugTask,
+    server,
 )
