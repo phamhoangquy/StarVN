@@ -195,6 +195,7 @@
 				display: -webkit-box
 				overflow: hidden
 				text-overflow: ellipsis
+				opacity: 0
 				ul
 					list-style: none
 					padding: 0
@@ -208,6 +209,15 @@
 						p
 							font-size: 14px
 							color: #ffffff
+				@media screen and ( max-width: 1290px)
+					opacity: 1
+				@media screen and ( max-width: 1023px)
+					top: 120px
+			&:hover
+				.title-zone
+					cursor: pointer
+					opacity: 1
+					visibility: visible
 			.btn-view
 				display: flex
 				align-items: center
