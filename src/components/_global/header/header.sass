@@ -367,10 +367,11 @@ header
 // form-wizard
 #wrap-form
 	display: none
-#requestForm,#wrap-form
+#requestForm,#wrap-form,.wrap-form
 	max-width: 75%
-	max-height: 80%
+	max-height: 85%
 	padding: 30px
+	margin-top: 0
 	.text
 		font-size: 36px
 		color: #111111
@@ -385,7 +386,6 @@ header
 		border-right: none
 		border-left: none
 		border-bottom: 1px solid #e0e0e0
-		padding: 5px 0
 		color: #111111
 		&::placeholder
 			color: #111111
@@ -404,12 +404,46 @@ header
 			background: #91002b
 			border: none
 			color: #ffffff
+	.qupload
+		position: absolute
+		bottom: -440px
+		left: 30px
+		cursor: pointer
+		width: 75%
+		label
+			display: none
+		.RadAsyncUpload
+			.ruInputs
+				#ctl00_mdl139_ctl00_ctl135d6274c57543b5aed246355bb4d699_upl135d6274c57543b5aed246355bb4d699row0
+					.ruFileWrap
+						width: 180px
+						height: 45px
+						.ruButton
+							border: 1px solid #91002b
+							background: none
+							color: #91002b
+							height: 45px
+							width: 180px
+							font-size: 14px
+							font-weight: 700
+							cursor: pointer
+					&:hover
+						.ruFileWrap
+							.ruButton
+								background: #91002b
+								border: 1px solid transparent
+								color: #ffffff
 	.qdropdown
-		padding-left: 5px
+		label
+			margin-left: -10px
+		select
+			padding-left: 0
 	.frm-btnwrap
 		position: absolute
-		bottom: -353px
-		left: 150px
+		bottom: -435px
+		left: 235px
+		input
+			padding: 11px 30px
 		@media (min-width: 768px)
 			float: left
 			margin-top: 0
