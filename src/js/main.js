@@ -45,6 +45,13 @@ let request = {
     }
 }
 
+let about = {
+    aboutScroll: () => {
+        let heightRequest = $('.srcoll-menu').height();
+        $(window).scrollTop() > heightRequest ? $('.srcoll-menu').addClass('about-scroll') : $('.srcoll-menu').removeClass('about-scroll');
+    }
+}
+
 function setBackgroundElement() {
     $('[setBackground]').each(function() {
         var background = $(this).attr('setBackground')
@@ -330,4 +337,5 @@ function swiperInit() {
 $(document).on('scroll', function() {
     header.headerScroll()
     request.requestScroll()
+    about.aboutScroll()
 });

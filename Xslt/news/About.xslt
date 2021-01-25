@@ -45,7 +45,7 @@
 		</section>
 	</xsl:template>
 	<xsl:template match="Zone" mode='Nav'>
-		<li>
+		<li class="link-to-srcoll-section">
 			<xsl:if test="position()=1">
 				<xsl:attribute name="class">
 					<xsl:text>active</xsl:text>

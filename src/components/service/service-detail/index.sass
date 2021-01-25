@@ -247,6 +247,7 @@
 
 // section-3
 .service-detail-3
+	overflow: hidden
 	padding: 60px 0
 	.row
 		display: flex
@@ -280,3 +281,60 @@
 	.frm-btnwrap
 		float: left
 		margin-left: 10px
+
+
+
+.border-detail
+	@media screen and ( max-width: 1023px)
+		padding-left: 15px !important
+		padding-right: 15px !important
+.wrap-form
+	max-width: 100%!important
+	#ctl00_altContent2_ctl01_pnlQuestions
+		padding-bottom: 100px
+		@media screen and ( max-width: 768px)
+			padding-left: 20px
+		@media screen and ( max-width: 576px)
+			padding-bottom: 0
+		.row
+			width: 100%
+		.frm-btnwrap
+			position: absolute
+			left: 250px
+			bottom: 55px
+			@media screen and ( max-width: 768px)
+				margin-left: -5px
+			@media screen and ( max-width: 576px)
+				position: unset
+		.frm-file
+			position: absolute
+			left: 55px
+			bottom: 50px
+			@media screen and ( max-width: 768px)
+				bottom: 80px
+			@media screen and ( max-width: 576px)
+				position: unset
+		.qupload
+			@media screen and ( max-width: 1023px)
+				width: 95%
+				margin-bottom: 0
+			.RadAsyncUpload
+				.ruInputs
+					li
+						.ruFileWrap
+							width: 180px
+							height: 45px
+							input
+								width: 180px
+								height: 45px
+								background: none
+								border: 1px solid #91002b
+								color: #91002b
+								font-size: 14px
+								font-weight: 700
+							&:hover
+								cursor: pointer
+								input
+									background: #91002b
+									border: 1px solid transparent
+									color: #ffffff
