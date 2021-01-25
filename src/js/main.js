@@ -9,8 +9,6 @@ $(document).ready(function() {
     tabActive();
     serviceDetailSlide();
     srcollMenu();
-    fancyboxModal();
-    toggleApplyForm();
     showBackToTop();
 });
 
@@ -174,27 +172,27 @@ function mappingMenu() {
 //     });
 // }
 
-function fancyboxModal() {
-    $(".get-in-touch a").click(function(e) {
-        e.preventDefault();
-        $.fancybox.open({
-            src: '#form-apply',
-            type: 'inline',
-            opts: {
-                afterShow: function(instance, current) {
-                    $(".fancybox-is-open").appendTo("main");
-                }
-            }
-        });
-        return false;
-    });
-}
+// function fancyboxModal() {
+//     $(".get-in-touch a").click(function(e) {
+//         e.preventDefault();
+//         $.fancybox.open({
+//             src: '#form-apply',
+//             type: 'inline',
+//             opts: {
+//                 afterShow: function(instance, current) {
+//                     $(".fancybox-is-open").appendTo("main");
+//                 }
+//             }
+//         });
+//         return false;
+//     });
+// }
 
-function toggleApplyForm() {
-    $(".get-in-touch .button-apply a").on("click", function() {
-        $(".form-apply").slideToggle();
-    });
-}
+// function toggleApplyForm() {
+//     $(".get-in-touch .button-apply a").on("click", function() {
+//         $(".form-apply").slideToggle();
+//     });
+// }
 
 // Slide product-detail
 function serviceDetailSlide() {

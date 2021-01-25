@@ -88,6 +88,7 @@
 			padding: 30px 0
 		.get-in-touch
 			display: flex
+			align-items: center
 			background: #8f052d
 			border: 1px solid transparent
 			padding: 12px 0px
@@ -96,10 +97,9 @@
 			cursor: pointer
 			@media screen and ( max-width: 576px)
 				width: 100%
-			.img
-				img
-					filter: brightness(0) invert(1)
-			a
+			img
+				filter: brightness(0) invert(1)
+			span
 				padding-left: 20px
 				color: #ffffff
 				text-transform: uppercase
@@ -108,13 +108,13 @@
 			&:hover
 				background: none
 				border: 1px solid #8f052d
-				.img
-					img
-						filter: brightness(1)
-				a
+				img
+					filter: brightness(1)
+				span
 					color: #8f052d
 		.upload-your-resume
 			display: flex
+			align-items: center
 			background: #8f052d
 			border: 1px solid transparent
 			padding: 12px 0px
@@ -123,10 +123,9 @@
 			cursor: pointer
 			@media screen and ( max-width: 576px)
 				width: 100%
-			.img
-				img
-					filter: brightness(0) invert(1)
-			a
+			img
+				filter: brightness(0) invert(1)
+			span
 				padding-left: 20px
 				color: #ffffff
 				text-transform: uppercase
@@ -135,10 +134,9 @@
 			&:hover
 				background: none
 				border: 1px solid #8f052d
-				.img
-					img
-						filter: brightness(1)
-				a
+				img
+					filter: brightness(1)
+				span
 					color: #8f052d
 		.text
 			padding: 0 15px
@@ -205,6 +203,7 @@
 							font-size: 16px
 							color: #666666
 							padding-left: 5px
+							width: 85px
 				.salary-detail
 					a
 						font-size: 16px

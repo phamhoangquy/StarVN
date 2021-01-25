@@ -44,29 +44,24 @@
 							</div>
 						</div>
 						<div class="form-career-detail">
-							<div class="get-in-touch">
-								<div class="img"><img src="/Data/Sites/1/media/img/home/shape-icon.png" alt=""/></div><a
-									href="javascript:;">Get in
-									touch</a>
-							</div>
+							<a class="get-in-touch" href='javascript:void(0)' data-fancybox="" data-src="#form-apply">
+								<img src="/Data/Sites/1/media/img/home/shape-icon.png" alt=""/>
+								<span>Get in touch</span>
+							</a>
+
 							<div class="text">Or</div>
-							<div class="upload-your-resume">
-								<div class="img"><img src="/Data/Sites/1/media/img/home/shape-icon.png" alt=""/></div><a
-									href="javascript:;">
-									<xsl:if test="FileUrl!=''">
 
-										<xsl:attribute name="href">
-											<xsl:value-of select="FileUrl"></xsl:value-of>
-										</xsl:attribute>
-
-										<xsl:attribute name="download">
-										</xsl:attribute>
-									</xsl:if>
-									Upload
-									your
-									resume
-								</a>
-							</div>
+							<a  class="upload-your-resume" href="javascript:;">
+								<xsl:if test="FileUrl!=''">
+									<xsl:attribute name="href">
+										<xsl:value-of select="FileUrl"></xsl:value-of>
+									</xsl:attribute>
+									<xsl:attribute name="download">
+									</xsl:attribute>
+								</xsl:if>
+								<img src="/Data/Sites/1/media/img/home/shape-icon.png" alt=""/>
+								<span>Upload your resume</span>
+							</a>
 						</div>
 						<div class="form-apply">
 							<iframe>
