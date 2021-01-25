@@ -84,14 +84,21 @@
 			border: 1px solid transparent
 			@media screen and ( max-width: 576px )
 				margin-top: 15px
-			a
+			img
+				filter: brightness(0) invert(1)
+			span
+				padding-left: 30px
 				color: #ffffff
-				font-size: 14px
 				text-transform: uppercase
-				padding-left: 20px
+				font-weight: 600
+				font-size: 14px
 			&:hover
-				border: 1px solid #ffffff
 				background: none
+				border: 1px solid #ffffff
+				img
+					filter: brightness(0) invert(1)
+				span
+					color: #ffffff
 		.text-banner-top
 			font-size: 14px
 			color: #ffffff

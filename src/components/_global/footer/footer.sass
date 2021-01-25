@@ -11,16 +11,17 @@ footer
 				text-align: center
 		.btn-view
 			display: flex
+			align-items: center
 			background: #8f052d
 			border: 1px solid transparent
 			padding: 12px 0px
 			width: 180px
 			cursor: pointer
 			margin: 0 auto
-			.img
-				img
-					filter: brightness(0) invert(1)
-			a
+			img
+				filter: brightness(0) invert(1)
+				height: 100%
+			span
 				padding-left: 30px
 				color: #ffffff
 				text-transform: uppercase
@@ -29,10 +30,9 @@ footer
 			&:hover
 				background: none
 				border: 1px solid #ffffff
-				.img
-					img
-						filter: brightness(0) invert(1)
-				a
+				img
+					filter: brightness(0) invert(1)
+				span
 					color: #ffffff
 	
 	.footer-block

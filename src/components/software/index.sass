@@ -61,15 +61,15 @@
 			padding-bottom: 20px
 		.btn-view
 			display: flex
+			align-items: center
 			background: none
 			padding: 12px 0px
 			width: 180px
 			cursor: pointer
 			border: 1px solid #8f052d
-			.img
-				img
-					filter: brightness(1)
-			a
+			img
+				filter: brightness(1)
+			span
 				padding-left: 30px
 				color: #8f052d
 				text-transform: uppercase
@@ -78,9 +78,7 @@
 			&:hover
 				background: #8f052d
 				border: 1px solid transparent
-
-				.img
-					img
-						filter: brightness(0) invert(1)
-				a
+				img
+					filter: brightness(0) invert(1)
+				span
 					color: #ffffff

@@ -90,20 +90,20 @@
 		transition: .3s all  ease-in-out
 		border: 1px solid #999999
 		cursor: pointer
-		img
-			transition: .3s all  ease-in-out
-			filter: brightness(0.6)
+		display: flex
+		justify-content: center
+		align-items: center
+		em
+			font-size: 24px
+			color: #999999
 		&:hover
 			background: #ee202e
 			border: none
-			img
-				filter: brightness(1)
+			em
+				color: #ffffff
 		&:focus
 			outline: none
 	.nav-arrow-next
-		display: flex
-		justify-content: flex-start
-		align-items: center
 		right: -50px
 		@media screen and ( max-width: 1350px)
 			right: 0
@@ -113,9 +113,6 @@
 			right: 0
 			
 	.nav-arrow-prev
-		display: flex
-		justify-content: flex-end
-		align-items: center
 		left: -50px
 		@media screen and ( max-width: 1350px)
 			left: 0
