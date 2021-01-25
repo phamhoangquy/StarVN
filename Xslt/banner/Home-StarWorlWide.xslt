@@ -13,7 +13,7 @@
 			</xsl:attribute>
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-8">
+					<div class="col-lg-8" data-aos="zoom-in" data-aos-offset="200" data-aos-duration="200">
 						<div class="head-title">
 							<h2>
 								<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>

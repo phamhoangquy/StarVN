@@ -62,7 +62,6 @@
 										<xsl:attribute name="download">
 										</xsl:attribute>
 									</xsl:if>
-
 									Upload
 									your
 									resume

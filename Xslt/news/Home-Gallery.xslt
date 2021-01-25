@@ -4,20 +4,19 @@
 	<xsl:output method="html" indent="yes" />
 
 	<xsl:template match="/">
-		<div class="head-title">
+		<div class="head-title" data-aos="zoom-in" data-aos-offset="200" data-aos-duration="200">
 			<h2>
 				<xsl:value-of disable-output-escaping="yes" select="/NewsList/ModuleTitle"></xsl:value-of>
 			</h2>
 		</div>
 		<xsl:apply-templates select="/NewsList/News" mode='Big'></xsl:apply-templates>
-		<div class="row">
+		<div class="row" data-aos="zoom-in" data-aos-offset="200" data-aos-duration="200">
 			<xsl:apply-templates select="/NewsList/News"></xsl:apply-templates>
 		</div>
 	</xsl:template>
 	<xsl:template match="News" mode='Big'>
 		<xsl:if test="position()=1">
-
-			<div class="figure-video media-play">
+			<div class="figure-video media-play" data-aos="zoom-in" data-aos-offset="200" data-aos-duration="200">
 				<div class="wrapper-video"><a>
 						<xsl:attribute name="data-fancybox">
 							<xsl:text>home-gallery-</xsl:text>
@@ -49,8 +48,8 @@
 			</div>
 
 		</xsl:if>
-
 	</xsl:template>
+
 	<xsl:template match="News">
 		<div class="col-lg-6">
 			<div class="figure-images">
