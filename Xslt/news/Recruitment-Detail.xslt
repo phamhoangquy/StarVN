@@ -44,11 +44,13 @@
 							</div>
 						</div>
 						<div class="form-career-detail">
-							<a class="get-in-touch" href='javascript:void(0)' data-fancybox="" data-src="#form-apply">
-								<img src="/Data/Sites/1/media/img/home/shape-icon.png" alt=""/>
-								<span>Get in touch</span>
-							</a>
-
+							<div class="apply-form">
+								<div class="btn button-apply">
+									<img src="/Data/Sites/1/media/img/home/shape-icon.png" alt=""/>
+									<a href='javascript:void(0)' data-fancybox="" data-src="#form-apply">Get in touch</a>
+								</div>
+							</div>
+							
 							<div class="text">Or</div>
 
 							<a  class="upload-your-resume" href="javascript:;">
@@ -63,10 +65,10 @@
 								<span>Upload your resume</span>
 							</a>
 						</div>
-						<div class="form-apply">
+						<div class="form-apply" id="form-apply" style="display: none">
 							<iframe>
 								<xsl:attribute name="src">
-									<xsl:value-of select="ApplyUrl"></xsl:value-of>
+									<xsl:value-of select="/NewsDetail/ApplyUrl"></xsl:value-of>
 								</xsl:attribute>
 							</iframe>
 						</div>
