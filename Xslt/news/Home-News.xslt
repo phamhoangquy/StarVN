@@ -4,12 +4,12 @@
 	<xsl:output method="html" indent="yes" />
 
 	<xsl:template match="/">
-		<div class="head-title" data-aos="zoom-in" data-aos-offset="200" data-aos-duration="200">
+		<div class="head-title" data-aos="fade-zoom-in">
 			<h2>
 				<xsl:value-of disable-output-escaping="yes" select="/NewsList/ModuleTitle"></xsl:value-of>
 			</h2>
 		</div>
-		<div class="row" data-aos="zoom-in" data-aos-offset="200" data-aos-duration="200">
+		<div class="row" data-aos="fade-zoom-in">
 			<div class="col-lg-6">
 				<xsl:apply-templates select="/NewsList/News" mode='Big'></xsl:apply-templates>
 			</div>

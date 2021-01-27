@@ -49,6 +49,8 @@ header
 			bottom: -38px
 			right: 0
 			padding: 7px
+			@media screen and ( max-width: 576px)
+				bottom: -35px
 			span
 				font-size: 12px
 				color: #8f052d
@@ -367,11 +369,12 @@ header
 // form-wizard
 #wrap-form
 	display: none
-#requestForm,#wrap-form,.wrap-form
+#requestForm
 	max-width: 75%
-	max-height: 85%
-	padding: 15px 30px
 	margin-top: 0
+	@media screen and ( max-width: 576px)
+		padding: 15px 20px
+		max-width: 90%
 	.text
 		font-size: 36px
 		color: #111111
@@ -380,6 +383,8 @@ header
 		justify-content: center
 		align-items: center
 		padding-bottom: 15px
+		@media screen and ( max-width: 1023px)
+			font-size: 24px
 	input[type="text"],select
 		background: none
 		border-top: none
@@ -404,55 +409,93 @@ header
 			background: #91002b
 			border: none
 			color: #ffffff
-	.qupload
-		position: absolute
-		bottom: -385px
-		left: 30px
-		cursor: pointer
-		width: 75%
-		label
-			display: none
-		.RadAsyncUpload
-			.ruInputs
-				#ctl00_mdl139_ctl00_ctl135d6274c57543b5aed246355bb4d699_upl135d6274c57543b5aed246355bb4d699row0
-					.ruFileWrap
-						width: 180px
-						height: 45px
-						margin-bottom: 30px
-						.ruButton
-							border: 1px solid #91002b
-							background: none
-							color: #91002b
-							height: 45px
-							width: 180px
-							font-size: 14px
-							font-weight: 700
-							cursor: pointer
-					&:hover
-						.ruFileWrap
-							.ruButton
-								background: #91002b
-								border: 1px solid transparent
-								color: #ffffff
 	.qdropdown
 		label
 			margin-left: -10px
 		select
-			padding-left: 0
 			color: #999999
+	// .qupload
+	// 	position: absolute
+	// 	bottom: -385px
+	// 	left: 30px
+	// 	cursor: pointer
+	// 	width: 75%
+	// 	@media screen and ( max-width: 1023px)
+	// 		position: unset
+	// 		height: 15px !important
+	// 	label
+	// 		display: none
+	// 	.RadAsyncUpload
+	// 		.ruInputs
+	// 			#ctl00_mdl139_ctl00_ctl135d6274c57543b5aed246355bb4d699_upl135d6274c57543b5aed246355bb4d699row0
+	// 				.ruFileWrap
+	// 					width: 180px
+	// 					height: 45px
+	// 					margin-bottom: 30px
+	// 					.ruButton
+	// 						border: 1px solid #91002b
+	// 						background: none
+	// 						color: #91002b
+	// 						height: 45px
+	// 						width: 180px
+	// 						font-size: 14px
+	// 						font-weight: 700
+	// 						cursor: pointer
+	// 				&:hover
+	// 					.ruFileWrap
+	// 						.ruButton
+	// 							background: #91002b
+	// 							border: 1px solid transparent
+	// 							color: #ffffff
+	// .qdropdown
+	// 	label
+	// 		margin-left: -10px
+	// 	select
+	// 		padding-left: 0
+	// 		color: #999999
+	// .frm-btnwrap
+	// 	position: absolute
+	// 	bottom: -380px
+	// 	left: 235px
+	// 	@media screen and ( max-width: 1023px)
+	// 		position: unset
+	// 		height: 15px !important
+	// 		margin-left: 200px !important
+	// 		margin-top: -45px !important
+	// 	input
+	// 		padding: 11px 30px
+	// 	@media (min-width: 768px)
+	// 		float: left
+	// 		margin-top: 0
+	// 		margin-left: 10px
+	// 	.frm-btn
+	// 		margin-bottom: 30px
+	// .fancybox-button
+	// 	background: #8f052d
+	// 	svg
+	// 		color: #ffffff
+#requestForm,#wrap-form,.wrap-form
+	.qupload
+		.RadAsyncUpload.RadUpload.RadUpload_Simple.asynupload
+			.ruInputs
+				li
+					margin-left: -10px
+					.ruFileWrap.ruStyled
+						height: 50px
+						input
+							height: 50px
+							border: 1px solid #8f052d
+							background: #ffffff
+							color: #8f052d
+							width: 150px
+							font-size: 14px
+							font-weight: 700
+						&:hover
+							input
+								background: #8f052d
+								color: #ffffff
+								border: none
 	.frm-btnwrap
-		position: absolute
-		bottom: -380px
-		left: 235px
-		input
-			padding: 11px 30px
-		@media (min-width: 768px)
-			float: left
-			margin-top: 0
-			margin-left: 10px
-		.frm-btn
-			margin-bottom: 30px
-	.fancybox-button
-		background: #8f052d
-		svg
-			color: #ffffff
+		float: left
+		margin-top: -84px
+		margin-left: 150px

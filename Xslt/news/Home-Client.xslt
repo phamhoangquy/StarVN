@@ -5,13 +5,13 @@
 
 	<xsl:template match="/">
 		<section class="home_s-3">
-			<div class="container">
-				<div class="head-title" data-aos="zoom-in" data-aos-offset="200" data-aos-duration="200">
+			<div class="container" data-aos="fade-zoom-in">
+				<div class="head-title">
 					<h2>
 						<xsl:apply-templates select="/ZoneList/ModuleTitle"></xsl:apply-templates>
 					</h2>
 				</div>
-				<div class="tab-menu" data-aos="zoom-in" data-aos-offset="200" data-aos-duration="200">
+				<div class="tab-menu">
 					<div class="tab-description">
 						<ul class="tab-navigation">
 							<xsl:apply-templates select="/ZoneList/Zone/Zone"></xsl:apply-templates>

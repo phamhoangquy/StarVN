@@ -1,7 +1,9 @@
 $(document).ready(function() {
     AOS.init({
         disable: "mobile",
-    });
+        duration: 2000,
+        easing: 'ease-in-sine',
+    })
     setBackgroundElement();
     mappingMenu();
     toggleMobileMenu();

@@ -5,7 +5,7 @@
 
 	<xsl:template match="/">
 		<section class="home_s-5">
-			<div class="container" data-aos="zoom-in" data-aos-offset="200" data-aos-duration="200">
+			<div class="container" data-aos="fade-zoom-in">
 				<div class="head-title">
 					<h2>
 						<xsl:value-of disable-output-escaping="yes" select="/NewsList/ModuleTitle"></xsl:value-of>

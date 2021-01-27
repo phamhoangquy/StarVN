@@ -6,12 +6,12 @@
 	<xsl:template match="/">
 		<section class="home_s-2">
 			<div class="container">
-				<div class="head-title" data-aos="zoom-in" data-aos-offset="200" data-aos-duration="200">
+				<div class="head-title">
 					<h2>
 						<xsl:value-of disable-output-escaping="yes" select="/NewsList/ModuleTitle"></xsl:value-of>
 					</h2>
 				</div>
-				<div class="row" data-aos="zoom-in" data-aos-offset="200" data-aos-duration="200">
+				<div class="row">
 					<xsl:apply-templates select="/NewsList/News"></xsl:apply-templates>
 				</div>
 			</div>
