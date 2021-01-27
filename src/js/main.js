@@ -1,7 +1,7 @@
 $(document).ready(function() {
     AOS.init({
         disable: "mobile",
-        duration: 2000,
+        duration: 1500,
         easing: 'ease-in-sine',
     })
     setBackgroundElement();
