@@ -200,7 +200,6 @@ function mappingMenu() {
 function serviceDetailSlide() {
     var galleryThumbs = new Swiper('.gallery-thumbs', {
         spaceBetween: 20,
-        slidesPerView: 4,
         freeMode: true,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
