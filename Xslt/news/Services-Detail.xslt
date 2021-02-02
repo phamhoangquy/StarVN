@@ -21,7 +21,6 @@
 							<div class="swiper-container gallery-top">
 								<div class="swiper-wrapper">
 									<xsl:apply-templates select="NewsImages"></xsl:apply-templates>
-
 								</div>
 							</div>
 							<div class="swiper-container gallery-thumbs">
@@ -33,10 +32,13 @@
 								<div class="nav-arrow-prev"><em class="ri-arrow-left-s-line"></em></div>
 								<div class="nav-arrow-next"><em class="ri-arrow-right-s-line"></em></div>
 							</div>
+							<xsl:apply-templates select="NewsAttributes"></xsl:apply-templates>
 						</div>
 					</div>
 				</div>
-
+				<div class="fullcontent">
+					<xsl:value-of disable-output-escaping="yes" select="FullContent"></xsl:value-of>
+				</div>
 			</div>
 		</section>
 		<section class="service-detail-2">
@@ -67,6 +69,9 @@
 			</xsl:attribute>
 			</img>
 		</div>
+	</xsl:template>
+	<xsl:template match="NewsAttributes">
+		<xsl:value-of disable-output-escaping="yes" select="Content"></xsl:value-of>
 	</xsl:template>
 	<xsl:template match="NewsOther">
 		<div class="swiper-slide">
