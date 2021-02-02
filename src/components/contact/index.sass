@@ -51,6 +51,8 @@
 	// map
 	.map-wrapper
 		padding-top: 40px
+		@media screen and ( max-width: 1023px)
+			padding-top: 0
 
 	// form
 	#ctl00_mainContent_ctl04_pnlFormWizard
@@ -81,6 +83,10 @@
 			.frm-btn
 				@media screen and ( max-width: 1023px)
 					margin-right: -10px
+					margin-left: -15px
+		.qtext
+			input
+				padding-left: 15px
 		.form-group
 			input[type="text"],select
 				background: #f3f3f3

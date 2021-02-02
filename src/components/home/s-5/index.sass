@@ -13,7 +13,7 @@
 		position: absolute
 		width: 40px
 		height: 40px
-		bottom: 25%
+		top: 50%
 		transition: .3s all  ease-in-out
 		border: 1px solid #999999
 		cursor: pointer
@@ -54,13 +54,16 @@
 		.wrapper
 			text-align: center
 			cursor: pointer
-			height: 359px
+			height: 300px
 			padding: 30px
 			border-bottom: 10px solid transparent
+			@media screen and ( max-width: 1440px)
+				padding: 10px
+				height: auto
 			&:hover
 				background: #f5f5f5
 				border-bottom: 10px solid #91002b
-				padding: 30px
+				padding: 10px
 				.title-slide
 					color: #91002b
 					a
@@ -70,9 +73,13 @@
 			.title-slide
 				font-size: 24px
 				color: #111111
+				@media screen and ( max-width: 1440px)
+					font-size: 22px
 				a
 					font-size: 24px
 					color: #111111
+					@media screen and ( max-width: 1440px)
+						font-size: 22px
 			.content-slide
 				font-size: 14px
 				color: #111111

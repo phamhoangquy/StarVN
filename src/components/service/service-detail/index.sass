@@ -176,12 +176,12 @@
 					font-size: 24px
 					text-transform: uppercase
 					font-weight: 700
-					-webkit-box-orient: vertical
-					-webkit-line-clamp: 2
-					-o-text-overflow: ellipsis
-					display: -webkit-box
-					overflow: hidden
-					text-overflow: ellipsis
+					// -webkit-box-orient: vertical
+					// -webkit-line-clamp: 2
+					// -o-text-overflow: ellipsis
+					// display: -webkit-box
+					// overflow: hidden
+					// text-overflow: ellipsis
 					@media screen and ( max-width: 1280px)
 						font-size: 18px
 					@media screen and ( max-width: 1023px)
@@ -270,7 +270,9 @@
 		align-items: center
 	.border-detail
 		border: 1px solid #e0e0e0
-		padding: 40px
+		padding: 40px 80px
+		@media screen and ( max-width: 1023px)
+			padding: 40px
 	.wrap-form
 		margin-top: 20px
 		input[type='text']
@@ -284,7 +286,6 @@
 			border: 1px solid #e0e0e0
 		select
 			display: flex
-			width: 100%
 			background: none
 			font-size: 15px
 			border-top: 0
@@ -313,14 +314,28 @@
 			@media screen and ( max-width: 576px)
 				padding-bottom: 0
 			.row
-				padding: 0 30px
 				@media screen and ( max-width: 1023px)
 					width: 100%
-				@media screen and ( max-width: 576px)
+					padding: 40px
+				@media screen and ( max-width: 768px)
 					padding: 0
+			.qcustom
+				#ctl00_altContent2_ctl01_ctl264bdf671300475eba15d5806c66098d
+					.settinglabel
+						display: none
+				#ctl00_altContent2_ctl01_uc264bdf671300475eba15d5806c66098d_UpdatePanel1
+					.province-wrap
+						.row
+							padding: 0
+							@media screen and ( max-width: 1023px)
+								width: unset
+							.qdropdown
+								margin-bottom: 15px
+								label
+									margin-left: -10px
 			.frm-btnwrap
 				position: absolute
-				left: 250px
+				left: 270px
 				bottom: 60px
 				margin-top: 0 !important
 				margin-left: 0 !important
@@ -334,7 +349,7 @@
 					margin-top: 25px !important
 			.frm-file
 				position: absolute
-				left: 55px
+				left: 65px
 				bottom: 50px
 				@media screen and ( max-width: 768px)
 					bottom: 80px

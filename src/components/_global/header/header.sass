@@ -280,6 +280,7 @@ header
 					padding: 0
 					li
 						display: flex
+						align-items: center
 						padding-top: 15px
 						.icon-tel
 							span
@@ -373,6 +374,7 @@ header
 #requestForm
 	max-width: 75%
 	margin-top: 0
+	padding: 0 44px
 	@media screen and ( max-width: 576px)
 		padding: 15px 20px
 		max-width: 90%
@@ -415,6 +417,7 @@ header
 			margin-left: -10px
 		select
 			color: #999999
+			padding-left: 0
 	// .qupload
 	// 	position: absolute
 	// 	bottom: -385px
@@ -476,6 +479,14 @@ header
 	// 	svg
 	// 		color: #ffffff
 #requestForm,#wrap-form,.wrap-form
+	.qtext
+		input
+			padding-left: 0
+	.qcustom
+		margin-bottom: 0
+		#ctl00_mdl139_ctl00_ctl74c1b30e18194101a6520a126d4112f0
+			.settinglabel
+				display: none
 	.qupload
 		.RadAsyncUpload.RadUpload.RadUpload_Simple.asynupload
 			.ruInputs
@@ -500,6 +511,8 @@ header
 		float: left
 		margin-top: -84px
 		margin-left: 150px
+		position: relative
+		z-index: 99
 	.fancybox-button
 		background: #8f052d
 		svg
