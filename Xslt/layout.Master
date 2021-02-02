@@ -42,7 +42,54 @@
                     <div class="container">
                         <div class="header">
                             <div class="header_logo">
-                                <portal:ModuleWrapper ID="mdl135" runat="server" ConfigureModuleId="135" />
+                                <div class="logo">
+                                    <a href="/">
+                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 100" style="enable-background:new 0 0 200 100;" xml:space="preserve">
+                                            <style>
+                                                .st0{fill:#A70A2E;}
+                                                .st1{fill:#1D1D1B;}
+                                                .st2{fill:#FFFFFF;}
+                                                .st3{clip-path:url(#SVGID_2_);fill:#FFFFFF;}
+                                            </style>
+                                            <g>
+                                                <polygon class="st0" points="30.17,30.18 16.23,30.18 16.23,100 189,100 189,30.18 175.06,30.18 175.06,78.79 30.17,78.79 	"/>
+                                                <rect x="30.17" y="0" class="st1" width="144.89" height="78.79"/>
+                                                <polygon class="st2" points="83.6,30.79 83.6,59.41 79.61,59.41 79.61,30.79 70.73,30.79 72.68,27.34 93.55,27.34 91.6,30.79 	"/>
+                                                <g>
+                                                    <defs>
+                                                        <rect id="SVGID_1_" x="16.23" y="0" width="172.35" height="100"/>
+                                                    </defs>
+                                                    <clipPath id="SVGID_2_">
+                                                        <use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+                                                    </clipPath>
+                                                    <path class="st3" d="M151.95,59.41l-7.7-15.43c3.22-0.91,7.31-2.74,7.31-7.2c0-7.51-11.21-6.19-11.21-6.19v28.82h-4V30.58
+                                                        c0,0-3.12-0.31-6.34,0.1l2.15-3.65h13.07c0,0,10.82,0.51,10.82,9.74c0,5.68-3.31,8.02-6.73,8.93l7.41,13.7H151.95z"/>
+                                                    <path class="st3" d="M64.69,27.95c0,0-3.9-1.02-6.63-1.02c-2.34,0.1-3.8,0.61-4.68,0.91c-1.07,0.31-3.12,2.03-3.41,4.46
+                                                        c-0.29,2.64,0,3.55,1.46,5.89c1.37,2.33,3.41,4.16,4,4.67c0.39,0.41,3.9,4.26,4.19,4.57c0.29,0.41,1.37,1.52,1.37,3.75
+                                                        c0,2.03-1.56,3.86-3.22,4.26c-1.76,0.5-2.93,0.5-3.51,0.5c-0.58,0-3.51-0.3-4.78-1.12l-2.05,3.65c-0.29,0.31,2.63,1.52,8.78,1.32
+                                                        c0,0,2.34-0.3,3.02-0.4c0.98-0.2,3.22-1.52,4.39-2.94c1.17-1.73,1.85-3.25,1.85-4.97c0-2.44-1.17-5.07-2.54-6.8
+                                                        c-1.37-1.72-5.26-5.38-5.75-5.78c-0.39-0.41-2.83-2.74-2.83-4.87c0-2.44,2.44-2.94,2.73-3.05c0.58-0.1,2.04-0.1,2.83,0
+                                                        c0.78,0.2,2.44,0.31,2.83,0.41L64.69,27.95z"/>
+                                                    <polygon class="st3" points="104.37,36.57 115.68,36.57 115.1,35.56 104.95,35.56 		"/>
+                                                    <polygon class="st3" points="103.1,38.8 116.95,38.8 116.36,37.79 103.69,37.79 		"/>
+                                                    <polygon class="st3" points="101.84,41.14 118.22,41.14 117.63,40.12 102.42,40.12 		"/>
+                                                    <polygon class="st3" points="100.57,43.47 119.48,43.47 118.9,42.36 101.15,42.36 		"/>
+                                                    <polygon class="st3" points="99.3,45.7 120.75,45.7 120.17,44.69 99.89,44.69 		"/>
+                                                    <polygon class="st3" points="98.03,48.04 122.02,48.04 121.43,47.02 98.62,47.02 		"/>
+                                                    <polygon class="st3" points="96.77,50.27 123.29,50.27 122.7,49.26 97.35,49.26 		"/>
+                                                    <polygon class="st3" points="95.5,52.61 124.55,52.61 123.97,51.59 96.08,51.59 		"/>
+                                                    <polygon class="st3" points="94.23,54.84 125.82,54.84 125.24,53.82 94.81,53.82 		"/>
+                                                    <polygon class="st3" points="92.96,57.17 127.09,57.17 126.5,56.16 93.55,56.16 		"/>
+                                                    <polygon class="st3" points="91.89,59.41 128.35,59.41 127.87,58.29 92.38,58.29 		"/>
+                                                    <polygon class="st3" points="110.02,26.42 109.44,27.44 110.61,27.44 		"/>
+                                                    <polygon class="st3" points="108.17,29.67 111.88,29.67 111.29,28.66 108.76,28.66 		"/>
+                                                    <polygon class="st3" points="106.91,32 113.15,32 112.56,30.99 107.49,30.99 		"/>
+                                                    <polygon class="st3" points="105.64,34.24 114.41,34.24 113.83,33.22 106.22,33.22 		"/>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
                             </div>
                             <div class="header_main">
                                 <div class="header_infor">
@@ -158,7 +205,6 @@
                     </div>
                 </footer>
                 <div class="back-top-tool">
-
                     <div id="back-to-top"><img src="/Data/Sites/1/media/img/home/back-top.png" alt="" srcset="">
                     </div>
                     <div class="block__tool dekstop">
@@ -254,6 +300,7 @@
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script src="/data/sites/1/skins/default/js/plugins.min.js"></script>
         <script src="/data/sites/1/skins/default/js/main.min.js"></script>
+        <script src="/data/sites/1/skins/default/js/custom.js"></script>
     </body>
 
     </html>

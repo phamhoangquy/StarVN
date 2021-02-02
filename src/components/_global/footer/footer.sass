@@ -170,6 +170,11 @@ footer
 						p
 							color: #cccccc
 							font-size: 12px
+				p
+					a
+						color: #ffffff
+						&:hover
+							border-bottom: 1px solid #ffffff
 			.footer-links
 				display: flex
 				justify-content: center
@@ -180,9 +185,18 @@ footer
 					align-items: center
 					width: 41px
 					height: 41px
+					overflow: hidden
+					transition: .3s all ease-in-out
 					a
+						color: #ffffff
+						transform: scale(1)
+						transition: .3s all ease-in-out
 						span
+							cursor: pointer
 							color: #ffffff
+					&:hover
+						a
+							transform: scale(1.13)
 				.Module.Module-160
 					.ModuleContent
 						display: flex
