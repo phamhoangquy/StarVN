@@ -37,12 +37,15 @@ header
 		display: flex
 		align-items: center
 		justify-content: space-between
-		position: relative
+		// position: relative
 		.header_logo
 			.logo
 				width: 120px
 				height: 70px
 		.header_main
+			height: 83px
+			@media screen and ( max-width: 1280px)
+				height: auto
 			.header_menu
 				display: flex
 				align-items: center
@@ -75,6 +78,8 @@ header
 			display: flex
 			justify-content: flex-end
 			padding-bottom: 15px
+			@media screen and ( max-width: 1280px)
+				padding-bottom: 0
 			.hotline_box
 				padding-top: 5px
 				ul.tel
@@ -178,12 +183,12 @@ header
 			&:hover
 				a
 					color: #ffffff
-					border-bottom: 1px solid #ffffff
+					// border-bottom: 1px solid #ffffff
 			&.active
 				a
 					color: #ffffff 
-					border-bottom: 1px solid #ffffff
-	
+					// border-bottom: 1px solid #ffffff
+		
 	.block_search
 		width: 100%
 		height: 100%
@@ -350,16 +355,36 @@ header
 						color: #666666
 	.nav-menu
 		li
+			position: relative
 			a
 				color: #111111
 			&:hover
 				a
 					color: #8f052d
-					border-bottom: 1px solid #8f052d
+					// border-bottom: 1px solid #8f052d
 			&.active
 				a
 					color: #8f052d 
-					border-bottom: 1px solid #8f052d
+					// border-bottom: 1px solid #8f052d
+			.menu-list-a
+				&:after
+					position: absolute
+					bottom: 15px
+					left: 0
+					right: 0
+					margin: auto
+					width: 0%
+					content: ''
+					background: #8f052d !important
+					height: 1px
+					transition: all .2s
+			&:hover
+				&:after
+					width: 100%
+			.mega-menu
+				li
+					.title-mega
+						color: #ffffff
 	.mobile-wrapper
 		li
 			a

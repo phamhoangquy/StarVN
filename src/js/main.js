@@ -16,6 +16,23 @@ $(document).ready(function() {
     showBackToTop();
 });
 
+$('.collapse').click(function(e) {
+    e.preventDefault();
+    $("a:first-of-type").removeClass('click');
+
+    var $this = $(this);
+    if ($this.next().hasClass('show')) {
+        $this.next().removeClass('show');
+        $this.next().slideUp(350);
+    } else {
+        $this.parent().parent().find('li .collapse-inner').removeClass('show');
+        $this.parent().parent().find('li .collapse-inner').slideUp(350);
+        $this.toggleClass('click');
+        $this.next().toggleClass('show');
+        $this.next().slideToggle(350);
+    }
+});
+
 const AddHiddenFormContact = () => {
     $(".contact .wrap-form option[value=US]").prev().attr("hidden", "");
     $(".contact .wrap-form option[value=HCM]").prev().attr("hidden", "");
