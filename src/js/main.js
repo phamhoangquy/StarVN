@@ -11,9 +11,23 @@ $(document).ready(function() {
     tabActive();
     serviceDetailSlide();
     srcollMenu();
+    AddHiddenFormContact();
+    AddHiddenPopupForm();
     showBackToTop();
 });
 
+const AddHiddenFormContact = () => {
+    $(".contact .wrap-form option[value=US]").prev().attr("hidden", "");
+    $(".contact .wrap-form option[value=HCM]").prev().attr("hidden", "");
+    $("#ctl00_mainContent_ctl04_ctlc01c3889b6354d3d919ad02e31c3de3f_ddc01c3889b6354d3d919ad02e31c3de3f option").eq(0).attr("hidden", "");
+    $("#ctl00_mainContent_ctl04_ctl11e58491bfbe4db8a8b0886e1476d951_dd11e58491bfbe4db8a8b0886e1476d951 option").eq(0).attr("hidden", "");
+};
+
+const AddHiddenPopupForm = () => {
+    $("#requestForm .wrap-form .qdropdown select option[value=a71d6727-61e7-4282-9fcb-526d1e7bc24f]").prev().attr("hidden", "");
+    $("#ctl00_mdl139_ctl00_uc74c1b30e18194101a6520a126d4112f0_ddCountry option").eq(0).attr("hidden", "");
+    $("#ctl00_mdl139_ctl00_uc74c1b30e18194101a6520a126d4112f0_ddProvince option").eq(0).attr("hidden", "");
+};
 // const InsertBd = () => {
 //     $(".breadcrumb-wrapper").appendTo("#pagebanner .box-text");
 // };
@@ -162,39 +176,39 @@ function mappingMenu() {
     });
 }
 
-// function menuMobile() {
-//     $('header .button-hambuger').on('click', function() {
-//         if ($('header .button-hambuger .burger-bt-inner span').css('opacity') == 1) {
-//             $('header .button-hambuger').addClass('close')
-//             $('header .mobile-wrap').addClass('active')
-//         } else if ($('header .button-hambuger .burger-bt-inner span').css('opacity') == 0) {
-//             $('header .button-hambuger').removeClass('close')
-//             $('header .mobile-wrap').removeClass('active')
-//         }
-//     });
-// }
+function menuMobile() {
+    $('header .button-hambuger').on('click', function() {
+        if ($('header .button-hambuger .burger-bt-inner span').css('opacity') == 1) {
+            $('header .button-hambuger').addClass('close')
+            $('header .mobile-wrap').addClass('active')
+        } else if ($('header .button-hambuger .burger-bt-inner span').css('opacity') == 0) {
+            $('header .button-hambuger').removeClass('close')
+            $('header .mobile-wrap').removeClass('active')
+        }
+    });
+}
 
-// function fancyboxModal() {
-//     $(".get-in-touch a").click(function(e) {
-//         e.preventDefault();
-//         $.fancybox.open({
-//             src: '#form-apply',
-//             type: 'inline',
-//             opts: {
-//                 afterShow: function(instance, current) {
-//                     $(".fancybox-is-open").appendTo("main");
-//                 }
-//             }
-//         });
-//         return false;
-//     });
-// }
+function fancyboxModal() {
+    $(".get-in-touch a").click(function(e) {
+        e.preventDefault();
+        $.fancybox.open({
+            src: '#form-apply',
+            type: 'inline',
+            opts: {
+                afterShow: function(instance, current) {
+                    $(".fancybox-is-open").appendTo("main");
+                }
+            }
+        });
+        return false;
+    });
+}
 
-// function toggleApplyForm() {
-//     $(".get-in-touch .button-apply a").on("click", function() {
-//         $(".form-apply").slideToggle();
-//     });
-// }
+function toggleApplyForm() {
+    $(".get-in-touch .button-apply a").on("click", function() {
+        $(".form-apply").slideToggle();
+    });
+}
 
 // Slide product-detail
 function serviceDetailSlide() {

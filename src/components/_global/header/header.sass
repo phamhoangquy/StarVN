@@ -53,6 +53,8 @@ header
 			bottom: -38px
 			right: 0
 			padding: 7px
+			@media screen and ( max-width: 1279px)
+				bottom: -35px
 			// @media screen and ( max-width: 1280px)
 			// 	bottom: -655px
 			// 	background: #8f052d
@@ -426,9 +428,10 @@ header
 		label
 			margin-left: -10px
 		select
-			color: #999999
+			color: #111111
 			padding-left: 0
-
+			option:first-child
+				display: none
 #requestForm,#wrap-form,.wrap-form
 	.qtext
 		input
