@@ -27,12 +27,10 @@
 				<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
 			</a>
 			<xsl:if test="count(Zone)&gt;0">
+				<span class="mdi mdi-chevron-down"></span>
 				<ul class="mega-menu">
-					
 					<xsl:apply-templates select="Zone" mode="Curent"></xsl:apply-templates>
 				</ul>
-				<span class="mdi mdi-chevron-down">
-				</span>
 			</xsl:if>
 		</li>
 	</xsl:template>
@@ -56,11 +54,10 @@
 				<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
 			</a>
 			<xsl:if test="count(Zone)&gt;0">
+				<span class="mdi mdi-chevron-down"></span>
 				<ul class="mega-list">
 					<xsl:apply-templates select="Zone" mode="Child"></xsl:apply-templates>
 				</ul>
-				<span class="mdi mdi-chevron-down">
-				</span>
 			</xsl:if>
 		</li>
 	</xsl:template>
