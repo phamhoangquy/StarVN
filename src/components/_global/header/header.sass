@@ -172,9 +172,7 @@ header
 				border-bottom: 0
 				padding-bottom: 0
 			@media screen and ( max-width: 1280px )
-				padding: 15px 0
-				border-bottom: 1px solid #ffffff
-
+				padding-top: 15px
 			a
 				font-size: 18px
 				transition: all .2s
@@ -267,6 +265,8 @@ header
 		pointer-events: none
 		transform: translateX(20%)
 		transition: all .5s cubic-bezier(.68,-.55,.265,1.55)
+		overflow: scroll
+			
 		@media screen and ( max-width: 1280px )
 			width: 50%
 		@media screen and ( max-width: 576px )
@@ -354,6 +354,7 @@ header
 					span
 						color: #666666
 	.nav-menu
+		
 		li
 			// position: relative
 			a

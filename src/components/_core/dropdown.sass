@@ -11,8 +11,17 @@
 			display: none
 		@media screen and ( max-width: 1280px)
 			display: flex
-			justify-content: space-between
-			align-items: center
+			flex-direction: column
+		.menu-list-wrapper
+			span
+				display: none
+			@media screen and ( max-width: 1280px)
+				display: flex
+				justify-content: space-between
+				span
+					color: #ffffff
+					font-size: 24px
+					display: block
 		.menu-list-a
 			position: relative
 			padding: 20px 0
@@ -32,12 +41,13 @@
 					width: 100%
 			@media screen and ( max-width: 1280px)
 				padding: 0
-		&:hover
-			.mega-menu
-				top: 90px
-				opacity: 1
-				visibility: visible
-				transition: 0.3s linear
+		@media screen and ( min-width:1281px) 
+			&:hover
+				.mega-menu
+					top: 90px
+					opacity: 1
+					visibility: visible
+					transition: 0.3s linear
 		.mega-menu
 			position: absolute
 			top: 90px
@@ -53,12 +63,38 @@
 			flex-wrap: wrap
 			display: flex
 			justify-content: center
+			@media screen and ( max-width: 1280px)
+				position: static
+				padding: 0 15px
+				opacity: 1
+				visibility: visible
+				flex-direction: column
+				display: none
+				width: 100%
+				justify-content: flex-start
+				flex-wrap: nowrap
+				background: none
 			> li
 				flex: 0 0 25%
 				max-width: 25%
 				width: 100%
 				padding: 0 15px
 				list-style: none
+				@media screen and ( max-width: 1280px)
+					max-width: unset
+					width: 100%
+					flex: inherit
+					& + li 
+						margin-top: 10px
+				.moblie-show-mega
+					display: flex
+					justify-content: space-between
+					span
+						color: #ffffff
+						font-size: 24px
+						display: none
+						@media screen and ( max-width: 1280px)
+							display: block
 				.title-mega
 					color: #ffffff !important
 					position: relative
@@ -71,6 +107,8 @@
 						width: 2px
 						height: 10px
 						background-color: #ffffff
+						@media screen and ( max-width: 1280px)
+							top: 5px
 					&:hover
 						color: #8f052d !important
 						&:before
@@ -78,6 +116,14 @@
 				.mega-list
 					padding: 0
 					list-style: none
+					@media screen and ( max-width: 1280px)
+						display: none
+					li
+						@media screen and ( max-width: 1280px)
+							&:first-child
+								padding-bottom: 0
+							padding-top: 15px
+							padding-bottom: 15px
 					a
 						color: #8e969c
 						font-size: 12px
