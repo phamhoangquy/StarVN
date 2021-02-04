@@ -32,9 +32,13 @@
 				</xsl:if>
 			</div>
 			<xsl:if test="count(Zone)&gt;0">
-				<ul class="mega-menu">
-					<xsl:apply-templates select="Zone" mode="Curent"></xsl:apply-templates>
-				</ul>
+				<div class="mega-menu">
+					<div class="container">
+						<ul class="has-mega-menu">
+							<xsl:apply-templates select="Zone" mode="Curent"></xsl:apply-templates>
+						</ul>
+					</div>
+				</div>
 			</xsl:if>
 		</li>
 	</xsl:template>

@@ -2,9 +2,8 @@
 	display: flex
 	justify-content: space-between
 	align-items: center
-	ul 
+	.mega-menu 
 		transition: 0s !important
-
 	@media screen and ( max-width: 1280px )
 		display: none
 	.menu-list
@@ -16,7 +15,6 @@
 			display: flex
 			flex-direction: column
 			border-bottom: 1px solid #ffffff
-			padding-bottom: 15px
 		.moblie-show-menu
 			span
 				display: none
@@ -27,10 +25,46 @@
 					color: #ffffff
 					font-size: 24px
 					display: block
+		&:hover
+			.menu-list-a
+				position: relative
+				&::before
+					content: ''
+					position: absolute
+					bottom: 15px
+					left: 0
+					right: 0
+					margin: auto
+					width: 100%
+					content: ''
+					background: #fff
+					height: 1px
+					transition: all .2s
+				&:hover
+					&::before
+						width: 100%
+		&.active
+			.menu-list-a
+				position: relative
+				&::before
+					content: ''
+					position: absolute
+					bottom: 15px
+					left: 0
+					right: 0
+					margin: auto
+					width: 100%
+					content: ''
+					background: #fff
+					height: 1px
+					transition: all .2s
+				&:hover
+					&::before
+						width: 100%
 		.menu-list-a
 			position: relative
 			padding: 20px 0
-			&:after
+			&::before
 				position: absolute
 				bottom: 15px
 				left: 0
@@ -41,11 +75,17 @@
 				background: #fff
 				height: 1px
 				transition: all .2s
+				content: ''
 			&:hover
-				&:after
+				color: #ffffff
+				&::before
 					width: 100%
-			@media screen and ( max-width: 1280px)
-				padding: 0
+		@media screen and ( max-width: 1280px)
+			.menu-list-a
+				&:hover
+					color: #8f052d
+				&::before
+					display: none
 		&:hover
 			.mega-menu
 				top: 90px
@@ -54,18 +94,15 @@
 				transition: 0.3s linear
 		.mega-menu
 			position: absolute
+			opacity: 0
+			left: 0
 			top: 90px
 			z-index: 9
-			left: 0
-			justify-content: space-between
-			padding: 30px
-			background-color: rgba(#333333,.8)
+			background-color: rgba(#333333,.9)
 			opacity: 0
-			visibility: hidden
+			padding: 30px
 			width: 100%
-			flex-wrap: wrap
-			display: flex
-			justify-content: center
+			visibility: hidden
 			@media screen and ( max-width: 1280px)
 				position: static
 				padding: 0 15px
@@ -77,6 +114,14 @@
 				justify-content: flex-start
 				flex-wrap: nowrap
 				background: none
+		.has-mega-menu
+			width: 100%
+			justify-content: left
+			flex-wrap: wrap
+			display: flex
+			padding: 0
+			@media screen and ( max-width: 1280px)
+				padding-bottom: 15px
 			> li
 				flex: 0 0 25%
 				max-width: 25%
@@ -90,6 +135,9 @@
 					border-bottom: 1px solid #ffffff
 					padding-bottom: 10px
 					padding-top: 10px
+					padding-left: 0
+					&:first-child
+						padding-top: 0
 					&:last-child
 						padding-bottom: 0
 						border-bottom: 0
@@ -98,6 +146,8 @@
 				.moblie-show-mega
 					display: flex
 					justify-content: space-between
+					a
+						border-bottom: 0 !important
 					span
 						color: #ffffff
 						font-size: 24px
@@ -108,18 +158,18 @@
 					color: #ffffff !important
 					position: relative
 					font-size: 14px
-					&:before
-						content: ""
-						position: absolute
-						top: 5px
-						left: -10px
-						width: 2px
-						height: 10px
-						background-color: #ffffff
+					// &::before
+					// 	content: ""
+					// 	position: absolute
+					// 	top: 5px
+					// 	left: -10px
+					// 	width: 2px
+					// 	height: 10px
+					// 	background-color: #ffffff
 					&:hover
 						color: #8f052d !important
-						&:before
-							background-color: #8f052d
+						// &::before
+						// 	background-color: #8f052d
 				.mega-list
 					padding: 0
 					list-style: none
@@ -136,55 +186,10 @@
 						font-size: 12px
 						&:hover
 							color: #8f052d
-				// .block_collapse
-					list-style: none
-					padding: 0
-					li
-						padding: 3px 0
-						.collapse
-							text-decoration: none
-							width: 100%
-							display: block
-							color: #8e969c
-							font-size: 12px
-							transition: background .3s ease
-							border-radius: 7px
-							cursor: pointer
-						a
-							color: #8e969c
-							font-size: 12px
-							i
-								position: relative
-								color: #a3d618
-								transition: all 0.4s ease
-								margin-left: 5px
-								margin-right: 15px
-								font-size: 18px
-						a.click
-							color: #347227
-							i
-								color: #e5232a
-								transform: rotate(180deg)
-
-						.collapse-inner
-							overflow: hidden
-							display: none
-							li
-								position: relative
-								padding: 0px 0
-								padding-left: 14px
-								&:before
-									content: ""
-									position: absolute
-									top: 48%
-									left: 4px
-									width: 4px
-									height: 4px
-									border-radius: 50%
-									background-color: #8e969c
-			.active
+			&.active
 				.menu-list-a
-					&:after
+					&::before
+						content: ''
 						position: absolute
 						bottom: 15px
 						left: 0

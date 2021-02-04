@@ -27,12 +27,54 @@
 						color: #111111
 					&:hover
 						a
-							color: #8f052d
-							border-bottom: 1px solid #8f052d
+							color: #8f052d 
+							position: relative
+							&::before
+								position: absolute
+								bottom: 15px
+								left: 0
+								right: 0
+								margin: auto
+								width: 0%
+								content: ''
+								background: #8f052d !important
+								height: 1px
+								transition: all .2s
+							&:hover
+								&::before
+									width: 100%
 					&.active
 						a
 							color: #8f052d 
-							border-bottom: 1px solid #8f052d
+							position: relative
+							&::before
+								content: ''
+								position: absolute
+								bottom: 15px
+								left: 0
+								right: 0
+								margin: auto
+								width: 100%
+								content: ''
+								background: #8f052d !important
+								height: 1px
+								transition: all .2s
+							&:hover
+								&::before
+									width: 100%
+					.mega-menu
+						li
+							.title-mega
+								color: #ffffff
+								position: relative
+								&::before
+									display: none
+							&:hover
+								.title-mega
+									color: #8f052d
+							&.active
+								.title-mega
+									color: #8f052d
 	main
 		padding-top: 90px
 	.global-breadcrumb
