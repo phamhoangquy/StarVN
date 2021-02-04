@@ -176,7 +176,8 @@ function toggleMobileMenu() {
         };
     });
     arrow_1.on('click', function() {
-        $(this).parent().addClass('active').siblings(mega).slideToggle()
+        $(this).parent().toggleClass('active').siblings(mega).slideToggle().parent(list).siblings().find(mega).slideUp();
+        $(this).not().parents(list).siblings().find('.moblie-show-menu').removeClass('active');
     });
     arrow_2.on('click', function() {
         $(this).parent().toggleClass('active').closest('li').find(m_list).slideToggle().closest('li').siblings().find(m_list).slideUp();
