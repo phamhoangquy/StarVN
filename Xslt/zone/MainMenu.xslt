@@ -14,20 +14,24 @@
 					<xsl:text>menu-list active</xsl:text>
 				</xsl:attribute>
 			</xsl:if>
-			<a class="menu-list-a">
-				<xsl:attribute name="href">
-					<xsl:value-of select="Url"></xsl:value-of>
-				</xsl:attribute>
-				<xsl:attribute name="target">
-					<xsl:value-of select="Target"></xsl:value-of>
-				</xsl:attribute>
-				<xsl:attribute name="title">
-					<xsl:value-of select="Title"></xsl:value-of>
-				</xsl:attribute>
-				<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
-			</a>
+			<div class="moblie-show-menu">
+				<a class="menu-list-a">
+					<xsl:attribute name="href">
+						<xsl:value-of select="Url"></xsl:value-of>
+					</xsl:attribute>
+					<xsl:attribute name="target">
+						<xsl:value-of select="Target"></xsl:value-of>
+					</xsl:attribute>
+					<xsl:attribute name="title">
+						<xsl:value-of select="Title"></xsl:value-of>
+					</xsl:attribute>
+					<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+				</a>
+				<xsl:if test="count(Zone)&gt;0">
+					<span class="mdi mdi-chevron-down"></span>
+				</xsl:if>
+			</div>
 			<xsl:if test="count(Zone)&gt;0">
-				<span class="mdi mdi-chevron-down"></span>
 				<ul class="mega-menu">
 					<xsl:apply-templates select="Zone" mode="Curent"></xsl:apply-templates>
 				</ul>
@@ -41,20 +45,24 @@
 					<xsl:text>active</xsl:text>
 				</xsl:attribute>
 			</xsl:if>
-			<a class="title-mega">
-				<xsl:attribute name="href">
-					<xsl:value-of select="Url"></xsl:value-of>
-				</xsl:attribute>
-				<xsl:attribute name="target">
-					<xsl:value-of select="Target"></xsl:value-of>
-				</xsl:attribute>
-				<xsl:attribute name="title">
-					<xsl:value-of select="Title"></xsl:value-of>
-				</xsl:attribute>
-				<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
-			</a>
+			<div class="moblie-show-mega">
+				<a class="title-mega">
+					<xsl:attribute name="href">
+						<xsl:value-of select="Url"></xsl:value-of>
+					</xsl:attribute>
+					<xsl:attribute name="target">
+						<xsl:value-of select="Target"></xsl:value-of>
+					</xsl:attribute>
+					<xsl:attribute name="title">
+						<xsl:value-of select="Title"></xsl:value-of>
+					</xsl:attribute>
+					<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+				</a>
+				<xsl:if test="count(Zone)&gt;0">
+					<span class="mdi mdi-chevron-down"></span>
+				</xsl:if>
+			</div>
 			<xsl:if test="count(Zone)&gt;0">
-				<span class="mdi mdi-chevron-down"></span>
 				<ul class="mega-list">
 					<xsl:apply-templates select="Zone" mode="Child"></xsl:apply-templates>
 				</ul>

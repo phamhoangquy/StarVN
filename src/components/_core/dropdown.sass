@@ -12,7 +12,9 @@
 		@media screen and ( max-width: 1280px)
 			display: flex
 			flex-direction: column
-		.menu-list-wrapper
+			border-bottom: 1px solid #ffffff
+			padding-bottom: 15px
+		.moblie-show-menu
 			span
 				display: none
 			@media screen and ( max-width: 1280px)
@@ -41,13 +43,12 @@
 					width: 100%
 			@media screen and ( max-width: 1280px)
 				padding: 0
-		@media screen and ( min-width:1281px) 
-			&:hover
-				.mega-menu
-					top: 90px
-					opacity: 1
-					visibility: visible
-					transition: 0.3s linear
+		&:hover
+			.mega-menu
+				top: 90px
+				opacity: 1
+				visibility: visible
+				transition: 0.3s linear
 		.mega-menu
 			position: absolute
 			top: 90px
@@ -84,6 +85,12 @@
 					max-width: unset
 					width: 100%
 					flex: inherit
+					border-bottom: 1px solid #ffffff
+					padding-bottom: 10px
+					padding-top: 10px
+					&:last-child
+						padding-bottom: 0
+						border-bottom: 0
 					& + li 
 						margin-top: 10px
 				.moblie-show-mega
@@ -102,13 +109,11 @@
 					&:before
 						content: ""
 						position: absolute
-						top: 3px
+						top: 5px
 						left: -10px
 						width: 2px
 						height: 10px
 						background-color: #ffffff
-						@media screen and ( max-width: 1280px)
-							top: 5px
 					&:hover
 						color: #8f052d !important
 						&:before

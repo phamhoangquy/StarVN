@@ -164,7 +164,7 @@ function toggleMobileMenu() {
     var m_list = $('.menu-list .mega-list')
     var mobile = $('.menu_mobile')
     var list = $('.menu-list')
-    var arrow_1 = $('.menu-list-wrapper span')
+    var arrow_1 = $('.moblie-show-menu span')
     var arrow_2 = $('.moblie-show-mega span')
     var nav = $('.nav-menu')
     $('.header_btn').click(function() {
@@ -172,7 +172,7 @@ function toggleMobileMenu() {
         $('.menu_mobile').toggleClass('show');
         $('.overlay').toggleClass('show');
         if (mobile.hasClass('show')) {
-            $('.mege').removeClass('active')
+            $('.mega').removeClass('active')
         };
     });
     arrow_1.on('click', function() {
@@ -181,6 +181,7 @@ function toggleMobileMenu() {
     arrow_2.on('click', function() {
         $(this).parent().toggleClass('active').closest('li').find(m_list).slideToggle().closest('li').siblings().find(m_list).slideUp();
     });
+
     $('.overlay').click(function() {
         $(this).toggleClass('click');
         $('.menu_mobile').toggleClass('show');
