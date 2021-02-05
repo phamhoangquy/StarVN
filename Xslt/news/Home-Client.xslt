@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-	xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl">
-	<xsl:output method="html" indent="yes" />
-
+xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl">
+<xsl:output method="html" indent="yes" />
 	<xsl:template match="/">
 		<section class="home_s-3">
 			<div class="container">
@@ -30,8 +29,8 @@
 				<xsl:attribute name="class">
 					<xsl:text>active</xsl:text>
 				</xsl:attribute>
-
-			</xsl:if><a href="javascript:void(0)">
+			</xsl:if>
+			<a href="javascript:void(0)">
 				<xsl:attribute name="data-type">
 					<xsl:text disable-output-escaping="yes">client-tab-</xsl:text>
 					<xsl:value-of disable-output-escaping="yes" select="position()"></xsl:value-of>
@@ -67,7 +66,6 @@
 				<div class="col-lg-9">
 					<div class="row">
 						<xsl:apply-templates select="News"></xsl:apply-templates>
-
 					</div>
 				</div>
 			</div>
@@ -78,12 +76,12 @@
 			<div class="clients-img">
 				<div class="img">
 					<img>
-					<xsl:attribute name="src">
-						<xsl:value-of select="ImageUrl"></xsl:value-of>
-					</xsl:attribute>
-					<xsl:attribute name="alt">
-						<xsl:value-of select="Title"></xsl:value-of>
-					</xsl:attribute>
+						<xsl:attribute name="src">
+							<xsl:value-of select="ImageUrl"></xsl:value-of>
+						</xsl:attribute>
+						<xsl:attribute name="alt">
+							<xsl:value-of select="Title"></xsl:value-of>
+						</xsl:attribute>
 					</img>
 				</div>
 			</div>
