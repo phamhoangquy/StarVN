@@ -230,14 +230,14 @@ function mappingMenu() {
         mobileMethod: 'appendTo',
         desktopWrapper: 'header .header_menu',
         desktopMethod: 'prependTo',
-        breakpoint: 1280
+        breakpoint: 1279
     });
     $('header .header_infor .hotline_box ').mapping({
         mobileWrapper: 'header .menu_mobile .mobile-wrapper',
         mobileMethod: 'appendTo',
         desktopWrapper: 'header .header_infor',
         desktopMethod: 'prependTo',
-        breakpoint: 1280
+        breakpoint: 1279
     });
 }
 
