@@ -5,7 +5,7 @@
 
 	<xsl:template match="/">
 		<section class="home_s-3">
-			<div class="container" data-aos="fade-zoom-in">
+			<div class="container">
 				<div class="head-title">
 					<h2>
 						<xsl:apply-templates select="/ZoneList/ModuleTitle"></xsl:apply-templates>

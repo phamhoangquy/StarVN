@@ -28,7 +28,6 @@
 					</h2>
 				</div>
 				<div class="row">
-
 					<xsl:apply-templates select="/ZoneList/Zone[2]/News" mode='News-1'></xsl:apply-templates>
 				</div>
 			</div>
@@ -63,7 +62,6 @@
 			</a>
 
 		</li>
-
 	</xsl:template>
 	<xsl:template match="News">
 		<div class="head-title">

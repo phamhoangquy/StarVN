@@ -1,4 +1,17 @@
 $(document).ready(function() {
+
+    var path = window.location.href;
+    let Ketqua = path.substr(path.indexOf("#") + 1);
+    console.log(Ketqua);
+    if (path.indexOf("#") != -1) {
+        $("html,body").animate({
+                scrollTop: $("#" + Ketqua).offset().top -
+                    $("header").outerHeight() -
+                    47,
+            },
+            800
+        );
+    }
     AOS.init({
         disable: "mobile",
         duration: 1500,
@@ -11,10 +24,45 @@ $(document).ready(function() {
     tabActive();
     serviceDetailSlide();
     srcollMenu();
+    linkSrcollAbout();
     AddHiddenFormContact();
     AddHiddenPopupForm();
     showBackToTop();
 });
+
+
+// link srcoll section to about
+function srcollMenu() {
+    $(".menu-nav li a").on("click", function(event) {
+        if (this.hash !== "") {
+            let offset = $("header").outerHeight() + 50;
+            var hash = this.hash;
+            $(this).parent().addClass('active').siblings().removeClass("active")
+            $("html, body").animate({
+                    scrollTop: $(hash).offset().top - offset,
+                },
+                800,
+                function() {
+                    window.location.hash = hash;
+                }
+            );
+        } // End if
+    });
+    $(".has-mega-menu  a").on("click", function(e) {
+        if ("" !== this.hash) {
+            var i = $("header").outerHeight() + 90,
+                t = this.hash;
+            $(this)
+                .parent()
+                .addClass("active")
+                .siblings()
+                .removeClass("active"),
+                $("html, body").animate({ scrollTop: $(t).offset().top - i },
+                    800
+                );
+        }
+    });
+}
 
 $('.collapse').click(function(e) {
     e.preventDefault();
@@ -98,24 +146,6 @@ function setBackgroundElement() {
             "background-image": "url(" + background + ")",
             "background-repeat": "repeat"
         });
-    });
-}
-
-function srcollMenu() {
-    $(".link-to-srcoll-section a").on("click", function(event) {
-        if (this.hash !== "") {
-            let offset = $("header").outerHeight() + 50;
-            var hash = this.hash;
-            $(this).parent().addClass('active').siblings().removeClass("active")
-            $("html, body").animate({
-                    scrollTop: $(hash).offset().top - offset,
-                },
-                800,
-                function() {
-                    window.location.hash = hash;
-                }
-            );
-        } // End if
     });
 }
 
