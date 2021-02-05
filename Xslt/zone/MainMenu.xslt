@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-	xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl">
-	<xsl:output method="html" indent="yes" />
+xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl">
+<xsl:output method="html" indent="yes" />
 	<xsl:template match="/ZoneList">
 		<ul class="nav-menu">
 			<xsl:apply-templates select="Zone" mode="Parent"></xsl:apply-templates>
@@ -32,13 +32,26 @@
 				</xsl:if>
 			</div>
 			<xsl:if test="count(Zone)&gt;0">
-				<div class="mega-menu">
-					<div class="container">
-						<ul class="has-mega-menu">
-							<xsl:apply-templates select="Zone" mode="Curent"></xsl:apply-templates>
-						</ul>
-					</div>
-				</div>
+				<xsl:choose>
+					<xsl:when test="Description = 'justify-center'">
+						<div class="mega-menu">
+							<div class="container">
+								<ul class="has-mega-menu justify-center">
+									<xsl:apply-templates select="Zone" mode="Curent"></xsl:apply-templates>
+								</ul>
+							</div>
+						</div>
+					</xsl:when>
+					<xsl:otherwise>
+						<div class="mega-menu">
+							<div class="container">
+								<ul class="has-mega-menu ">
+									<xsl:apply-templates select="Zone" mode="Curent"></xsl:apply-templates>
+								</ul>
+							</div>
+						</div>
+					</xsl:otherwise>
+				</xsl:choose>
 			</xsl:if>
 		</li>
 	</xsl:template>
