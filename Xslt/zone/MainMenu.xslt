@@ -15,7 +15,7 @@
 				</xsl:attribute>
 			</xsl:if>
 			<div class="moblie-show-menu">
-				<a class="menu-list-a">
+				<a class="title-menu-list">
 					<xsl:attribute name="href">
 						<xsl:value-of select="Url"></xsl:value-of>
 					</xsl:attribute>
