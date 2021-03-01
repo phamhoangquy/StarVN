@@ -3,7 +3,7 @@
   xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl">
     <xsl:output method="html" indent="yes" />
     <xsl:template match="/">
-        <section class="home-banner" data-aos="fade-zoom-in">
+        <section class="home-banner">
             <div class="container-fuild">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
@@ -14,7 +14,7 @@
         </section>
     </xsl:template>
     <xsl:template match="Banner">
-        <div class="swiper-slide">
+        <div class="swiper-slide" data-aos="fade-zoom-in">
             <div class="wrapper">
                 <a href='javascript::'>
                     <img>
@@ -27,7 +27,7 @@
                     </img>
                 </a>
             </div>
-            <div class="caption container">
+            <div class="caption container" >
                 <xsl:value-of disable-output-escaping="yes" select="Description"></xsl:value-of>
             </div>
         </div>

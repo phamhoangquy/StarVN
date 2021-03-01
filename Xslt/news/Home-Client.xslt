@@ -3,7 +3,7 @@
 xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl">
 <xsl:output method="html" indent="yes" />
 	<xsl:template match="/">
-		<section class="home_s-3">
+		<section class="home_s-3" data-aos="fade-zoom-in">
 			<div class="container">
 				<div class="head-title">
 					<h2>

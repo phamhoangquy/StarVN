@@ -4,7 +4,7 @@
 	<xsl:output method="html" indent="yes" />
 
 	<xsl:template match="/">
-		<section class="home_s-2">
+		<section class="home_s-2" data-aos="fade-zoom-in">
 			<div class="container">
 				<div class="head-title">
 					<h2>

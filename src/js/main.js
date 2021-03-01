@@ -24,7 +24,7 @@ $(document).ready(function() {
     tabActive();
     serviceDetailSlide();
     srcollMenu();
-    linkSrcollAbout();
+    // linkSrcollAbout();
     AddHiddenFormContact();
     AddHiddenPopupForm();
     showBackToTop();
