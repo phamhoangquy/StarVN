@@ -319,6 +319,7 @@ function swiperInit() {
         // Optional parameters
         speed: 1205,
         slidesPerView: 1,
+        effect: 'fade',
         autoplay: {
             delay: 3000
         },

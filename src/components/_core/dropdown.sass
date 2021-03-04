@@ -117,7 +117,8 @@
 				background: none
 		.has-mega-menu
 			width: 100%
-			justify-content: left
+			// justify-content: left
+			justify-content: center
 			flex-wrap: wrap
 			display: flex
 			padding: 0
@@ -129,9 +130,10 @@
 					.moblie-show-mega
 						justify-content: center
 			> li
-				flex: 0 0 25%
-				max-width: 25%
-				width: 100%
+				// flex: 0 0 25%
+				flex: 0 0 100%
+				max-width: 100%
+				// width: 100%
 				padding: 0 15px 15px 15px
 				list-style: none
 				@media screen and ( max-width: 1279px)
@@ -199,3 +201,13 @@
 				display: block
 				font-size: 24px
 				color: #ffffff
+	@each $bpMenu, $paddingLeft in $grid-breakpoints-menu
+		@media(min-width: #{$bpMenu})
+			li 
+				width: $paddingLeft
+				&.menu-list
+					@for $megaNumber from 1 through 10
+						&:nth-child(#{$megaNumber})
+							.mega-menu
+								> .has-mega-menu
+									padding-left: (($paddingLeft * $megaNumber) - $paddingLeft)

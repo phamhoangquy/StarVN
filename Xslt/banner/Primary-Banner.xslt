@@ -27,7 +27,7 @@
                     </img>
                 </a>
             </div>
-            <div class="caption container" >
+            <div class="caption container">
                 <xsl:value-of disable-output-escaping="yes" select="Description"></xsl:value-of>
             </div>
         </div>
