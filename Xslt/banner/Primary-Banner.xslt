@@ -14,8 +14,8 @@
         </section>
     </xsl:template>
     <xsl:template match="Banner">
-        <div class="swiper-slide" data-aos="fade-zoom-in">
-            <div class="wrapper">
+        <div class="swiper-slide">
+            <div class="wrapper" data-aos="fade-zoom-in" data-aos-delay="1500" data-aos-offset="0">
                 <a href='javascript::'>
                     <img>
                         <xsl:attribute name="src">

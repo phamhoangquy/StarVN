@@ -8,7 +8,9 @@
 	@media screen and ( max-width: 1279px )
 		display: none
 	.menu-list
-		list-style: none 
+		list-style: none
+		// width: auto !important
+		position: relative
 		> span 
 			display: none
 		@media screen and ( max-width: 1279px)
@@ -88,7 +90,7 @@
 					display: none
 		&:hover
 			.mega-menu
-				top: 90px
+				top: 37px
 				opacity: 1
 				visibility: visible
 				transition: 1s all
@@ -97,12 +99,12 @@
 			position: absolute
 			opacity: 0
 			left: 0
-			top: 90px
+			top: 37px
 			z-index: 9
 			background-color: rgba(#333333,.9)
 			opacity: 0
-			padding: 30px
-			width: 100%
+			padding: 30px 30px
+			// width: 450px
 			visibility: hidden
 			@media screen and ( max-width: 1279px)
 				position: static
@@ -115,6 +117,19 @@
 				justify-content: flex-start
 				flex-wrap: nowrap
 				background: none
+			.container
+				padding-left: 0
+				padding-right: 0
+			// &::before
+			// 	content: ''
+			// 	position: fixed
+			// 	top: 90px
+			// 	left: 0
+			// 	width: 50vw
+			// 	// z-index: 9
+			// 	height: 25vw
+			// 	background-color: rgba(#333333,.9)
+			
 		.has-mega-menu
 			width: 100%
 			// justify-content: left
@@ -122,19 +137,21 @@
 			flex-wrap: wrap
 			display: flex
 			padding: 0
+			// margin-left: 240px
 			@media screen and ( max-width: 1279px)
 				padding-bottom: 15px
-			&.justify-center
-				justify-content: center
-				li
-					.moblie-show-mega
-						justify-content: center
+			// &.justify-center
+			// 	justify-content: center
+			// 	li
+			// 		.moblie-show-mega
+			// 			justify-content: center
 			> li
 				// flex: 0 0 25%
 				flex: 0 0 100%
 				max-width: 100%
 				// width: 100%
-				padding: 0 15px 15px 15px
+				// padding: 0 15px 15px 15px
+				padding: 0 0 15px 0
 				list-style: none
 				@media screen and ( max-width: 1279px)
 					max-width: unset
@@ -159,6 +176,7 @@
 						color: #ffffff !important
 						position: relative
 						font-size: 14px
+						white-space: nowrap
 						&:hover
 							color: #8f052d !important
 					span
@@ -201,13 +219,4 @@
 				display: block
 				font-size: 24px
 				color: #ffffff
-	@each $bpMenu, $paddingLeft in $grid-breakpoints-menu
-		@media(min-width: #{$bpMenu})
-			li 
-				width: $paddingLeft
-				&.menu-list
-					@for $megaNumber from 1 through 10
-						&:nth-child(#{$megaNumber})
-							.mega-menu
-								> .has-mega-menu
-									padding-left: (($paddingLeft * $megaNumber) - $paddingLeft)
+

@@ -22,7 +22,7 @@
 						<div class="bg-right">
 							<div class="card-title-right">
 								<h2>
-									<xsl:value-of disable-output-escaping="yes" select="/NewsDetail/OtherSoftwareText">
+									<xsl:value-of disable-output-escaping="yes" select="/NewsDetail/OtherNewsText">
 									</xsl:value-of>
 								</h2>
 							</div>

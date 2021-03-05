@@ -52,6 +52,8 @@
 					color: #ffffff
 				.caption
 					color: #ffffff
+		@media screen and ( max-width: 1024px)
+			display: block
 		@media screen and ( max-width: 1023px)
 			display: block
 			margin-bottom: 40px
@@ -60,17 +62,26 @@
 				max-width: 100%
 				max-height: 100%
 				width: 208px
-				height: 302px
+				height: 346px
+				@media screen and ( max-width: 1024px)
+					width: 100%
+					height: auto
 				@media screen and ( max-width: 1023px)
 					width: auto
 					height: auto
 				img
 					width: 100%
 					height: 100%
+					object-fit: cover
+					@media screen and ( max-width: 1023px)
+						height: auto
 		.desc-about-2
+			height: 346px
 			padding: 30px
 			background: #f5f5f5
 			box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1)
+			@media screen and ( max-width: 1023px)
+				height: auto
 			.title
 				font-size: 24px
 				color: #111111
@@ -79,14 +90,19 @@
 				padding-top: 10px
 				font-size: 16px
 				color: #111111
-				-webkit-box-orient: vertical
-				-webkit-line-clamp: 8
-				-o-text-overflow: ellipsis
-				display: -webkit-box
-				overflow: hidden
-				text-overflow: ellipsis
-				@media screen and ( max-width: 1060px)
-					-webkit-line-clamp: 6
+				height: 230px
+				overflow-y: scroll
+				scrollbar-width: thin
+				scrollbar-color: #91002b
+				&::-webkit-scrollbar
+					background: #91002b
+					width: 5px
+				&::-webkit-scrollbar-track
+					-webkit-box-shadow: inset 0 0 6px #f5f5f5
+					background-color: #f5f5f5
+				&::-webkit-scrollbar-thumb
+					background-color: #91002b
+					
 
 // section-3
 .about-3
@@ -115,18 +131,50 @@
 		.img
 			img
 				width: 100%
+				height: 400px
+				object-fit: cover
+				@media screen and ( max-width: 1024px)
+					height: 457px
+				@media screen and ( max-width: 1023px)
+					height: auto
 	.content-about-4
 		background: #f5f5f5
-		padding: 24px 30px
+		padding: 19px 30px
+		height: 400px
+		@media screen and ( max-width: 1024px)
+			height: auto
+		@media screen and ( max-width: 1023px)
+			height: auto
 		.head-title
 			h2
 				text-align: left
+				@media screen and ( max-width: 1440px)
+					font-size: 26px
 		.caption
 			font-size: 16px
 			color: #111111
+			height: 285px
+			overflow-y: scroll
+			scrollbar-width: thin
+			scrollbar-color: #91002b
+			&::-webkit-scrollbar
+				background: #91002b
+				width: 5px
+			&::-webkit-scrollbar-track
+				-webkit-box-shadow: inset 0 0 6px #f5f5f5
+				background-color: #f5f5f5
+			&::-webkit-scrollbar-thumb
+				background-color: #91002b
 			p
 				padding-bottom: 20px
-				font-weight: 600
+// .vi-vn
+// 	.about-4
+// 		.content-about-4
+// 			.head-title
+// 				h2
+// 					@media screen and ( max-width: 1440px)
+// 						font-size: 26px
+
 
 // nav
 .srcoll-menu

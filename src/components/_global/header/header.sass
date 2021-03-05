@@ -510,19 +510,32 @@ header
 					margin-left: -10px
 					.ruFileWrap.ruStyled
 						height: 50px
+						position: relative
 						input
 							height: 50px
 							border: 1px solid #8f052d
 							background: #ffffff
 							color: #8f052d
 							width: 150px
+							font-size: 0
+							font-weight: 700
+						&::before
+							cursor: pointer
+							content: 'Upload file'
+							position: absolute
+							top: 15px
+							left: 40px
 							font-size: 14px
 							font-weight: 700
+							color: #8f052d
+							
 						&:hover
 							input
 								background: #8f052d
 								color: #ffffff
 								border: none
+							&::before
+								color: #ffffff
 	.frm-btnwrap
 		float: left
 		margin-top: -84px
@@ -533,3 +546,24 @@ header
 		background: #8f052d
 		svg
 			color: #ffffff
+
+.vi-vn
+	#requestForm,#wrap-form,.wrap-form
+		.qupload
+			.RadAsyncUpload.RadUpload.RadUpload_Simple.asynupload
+				.ruInputs
+					li
+						.ruFileWrap.ruStyled
+							&::before
+								cursor: pointer
+								content: 'Tải file'
+								position: absolute
+								top: 15px
+								left: 35%
+								font-size: 14px
+								font-weight: 700
+								color: #8f052d
+							&:hover
+								&::before
+									cursor: pointer
+									color: #ffffff
