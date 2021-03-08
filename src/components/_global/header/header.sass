@@ -19,6 +19,8 @@ header
 										color: #666666
 								.text-mail
 									color: #666666
+									a
+										color: #666666 !important
 					.search-icon
 						span
 							color: #666666
@@ -88,6 +90,20 @@ header
 							display: contents
 							font-size: 14px
 							color: #ffffff
+							a
+								font-size: 14px
+								color: #ffffff
+								border-bottom: 1px solid transparent
+								display: flex
+								justify-content: center
+								align-items: center
+								padding-right: 10px
+								padding-left: 10px
+								&:hover
+									color: blue
+									border-bottom: 1px solid blue
+								&:first-child
+									padding-left: 0
 			.search-icon
 				display: flex
 				justify-content: center
@@ -348,6 +364,10 @@ header
 									color: #666666
 							.text-mail
 								color: #666666
+								a
+									color: #666666 !important
+									&:hover
+										color: blue !important
 				.search-icon
 					span
 						color: #666666
