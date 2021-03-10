@@ -74,6 +74,7 @@ xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl">
 						<xsl:value-of select="Title"></xsl:value-of>
 					</xsl:attribute>
 					<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+					<xsl:value-of disable-output-escaping="yes" select="SecondImageUrl"></xsl:value-of>
 				</a>
 				<xsl:if test="count(Zone)&gt;0">
 					<span class="mdi mdi-chevron-down"></span>

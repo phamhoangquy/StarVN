@@ -8,7 +8,7 @@
 	ShowDescription="true"
     DescriptionControlType="editor"
     ShowPrimaryImage="true"
-    ShowSecondImage="false"
+    ShowSecondImage="true" 
 	/>
 <portal:BannerDisplaySettings runat="server" 
 	ShowDescription="true"
