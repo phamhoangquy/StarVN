@@ -28,6 +28,7 @@ $(document).ready(function() {
     AddHiddenFormContact();
     AddHiddenPopupForm();
     showBackToTop();
+    appendSoftware();
 });
 
 
@@ -96,6 +97,10 @@ const AddHiddenPopupForm = () => {
 // const InsertBd = () => {
 //     $(".breadcrumb-wrapper").appendTo("#pagebanner .box-text");
 // };
+
+function appendSoftware() {
+    $('.other-software-wrap').appendTo('.bg-right .other-news-detail')
+}
 
 function height(el) {
     var height = 0;
