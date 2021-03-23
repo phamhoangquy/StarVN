@@ -1,19 +1,38 @@
 .back-top-tool
 	position: fixed
 	cursor: pointer
-	top: 65%
+	top: 63%
 	right: 10px
 	z-index: 999
+	@media screen and ( max-width: 1024px)
+		top: 83%
+	@media screen and ( max-width: 768px)
+		top: 78%
+	@media screen and ( max-width: 576px)
+		top: 69%
+	@media screen and ( max-width: 420px)
+		top: 69%
+	@media screen and ( max-width: 411px) and (min-width: 823px)
+		top: 72%
+	@media screen and ( max-width: 375px)
+		top: 66%
+	@media screen and ( max-width: 360px)
+		top: 65%
+	@media screen and ( max-width: 320px)
+		top: 60%
+	@media screen and ( max-width: 280px)
+		top: 65%
 	#back-to-top
 		width: 50px
 		height: 50px
-		opacity : 0
+		opacity: 0
 		visibility: visible
 		border: solid 1px  rgb(172, 172, 172)
 		transition: .3s all ease-in-out
 		display: flex
 		align-items: center
 		justify-content: center
+		margin-bottom: 10px
 		&.active 
 			opacity : 1
 			visibility: visible
