@@ -17,6 +17,8 @@ $(document).ready(function() {
         duration: 1500,
         easing: 'ease-in-sine',
     })
+
+    showThumbsImages();
     setBackgroundElement();
     mappingMenu();
     toggleMobileMenu();
@@ -31,6 +33,18 @@ $(document).ready(function() {
     appendSoftware();
 });
 
+function showThumbsImages() {
+    $('.news-list [data-fancybox]').fancybox({
+        thumbs: {
+            autoStart: true
+        }
+    });
+    $('.home_s-7 [data-fancybox]').fancybox({
+        thumbs: {
+            autoStart: true
+        }
+    });
+}
 
 // link srcoll section to about
 function srcollMenu() {

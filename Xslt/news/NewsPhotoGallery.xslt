@@ -35,6 +35,9 @@
 							</xsl:attribute>
 						</img>
 					</a>
+					<div style="display: none;">
+						<xsl:apply-templates select="NewsImages" mode="Gallery"></xsl:apply-templates>
+					</div>
 					<div class="images">
 						<div class="icon"><img src="/Data/Sites/1/media/img/home/h-s7-icon.png" alt="" /></div>
 					</div>
@@ -55,5 +58,29 @@
 				</div>
 			</div>
 		</div>
+	</xsl:template>
+	<xsl:template match="NewsImages" mode="Gallery">
+		<xsl:if test="position() > 1">
+			<a>
+				<xsl:attribute name="data-fancybox">
+					<xsl:text>gallery-</xsl:text>
+					<xsl:value-of disable-output-escaping="yes" select="position()"></xsl:value-of>
+				</xsl:attribute>
+				<xsl:attribute name="href">
+					<xsl:value-of disable-output-escaping="yes" select="ImageUrl"></xsl:value-of>
+				</xsl:attribute>
+				<xsl:attribute name="title">
+					<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
+				</xsl:attribute>
+				<img>
+					<xsl:attribute name="src">
+						<xsl:value-of select="ImageUrl"></xsl:value-of>
+					</xsl:attribute>
+					<xsl:attribute name="alt">
+						<xsl:value-of select="Title"></xsl:value-of>
+					</xsl:attribute>
+				</img>
+			</a>
+		</xsl:if>
 	</xsl:template>
 </xsl:stylesheet>
