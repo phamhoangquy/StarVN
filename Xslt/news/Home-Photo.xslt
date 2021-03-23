@@ -14,7 +14,7 @@
 							<a>
 								<xsl:attribute name="data-fancybox">
 									<xsl:text>home-gallery-image-</xsl:text>
-									<xsl:value-of disable-output-escaping="yes" select="position()"></xsl:value-of>
+									<xsl:value-of disable-output-escaping="yes" select="NewsId"></xsl:value-of>
 								</xsl:attribute>
 								<xsl:attribute name="href">
 									<xsl:value-of select="ImageUrl"></xsl:value-of>
@@ -54,7 +54,7 @@
 			<a>
 				<xsl:attribute name="data-fancybox">
 					<xsl:text>home-gallery-image-</xsl:text>
-					<xsl:value-of disable-output-escaping="yes" select="position()"></xsl:value-of>
+					<xsl:value-of disable-output-escaping="yes" select="../NewsId"></xsl:value-of>
 				</xsl:attribute>
 				<xsl:attribute name="href">
 					<xsl:value-of select="ImageUrl"></xsl:value-of>
