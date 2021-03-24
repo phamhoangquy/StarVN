@@ -339,9 +339,9 @@ function swiperInit() {
         speed: 1205,
         slidesPerView: 1,
         effect: 'fade',
-        // autoplay: {
-        //     delay: 3000
-        // },
+        autoplay: {
+            delay: 3000
+        },
         pagination: {
             el: ".home-banner-pagination",
             type: "bullets",
