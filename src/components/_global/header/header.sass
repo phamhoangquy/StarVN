@@ -471,6 +471,7 @@ header
 	@media screen and ( max-width: 576px)
 		padding: 15px 20px
 		max-width: 90%
+		overflow: hidden
 	.text
 		font-size: 36px
 		color: #111111
@@ -515,6 +516,14 @@ header
 			option:first-child
 				display: none
 #requestForm,#wrap-form,.wrap-form
+	// @media screen and ( max-width: 768px)
+	// 	.wrap-form 
+	// 		> div 
+	// 			.qtext,.qparagraph,.qupload,.qcustom
+	// 				flex: 0 0 60%
+	.row
+		@media screen and ( max-width: 768px)
+			width: 100%
 	.qtext
 		input
 			padding-left: 3.5px
@@ -528,6 +537,10 @@ header
 				margin-left: -10px
 				width: 100.7%
 				height: 46px
+			.province-wrap
+				.row
+					@media screen and ( max-width: 768px)
+						width: 113%
 	.qupload
 		.RadAsyncUpload.RadUpload.RadUpload_Simple.asynupload
 			.ruInputs
@@ -567,6 +580,12 @@ header
 		margin-left: 150px
 		position: relative
 		z-index: 99
+		@media screen and ( max-width: 768px)
+			margin-left: -15px
+			margin-top: -15px
+			.frm-btn
+				input
+					width: 150px !important
 	.fancybox-button
 		background: #8f052d
 		svg
