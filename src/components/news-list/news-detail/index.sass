@@ -1,9 +1,9 @@
 .news-detail
 	padding: 40px 0
 	.row
-		display: flex
-		align-items: center
-		justify-content: center
+		// display: flex
+		// align-items: center
+		// justify-content: center
 		border-bottom: 1px solid #e0e0e0
 	.card-title
 		h1
@@ -66,6 +66,39 @@
 			img
 				padding-bottom: 25px
 
+	// right
+	.right-detail-wrapper
+		border-bottom: 1px solid #e0e0e0
+		padding-bottom: 25px
+		padding-top: 20px
+		&:last-child
+			border-bottom: 0
+		.title
+			border: 1px solid #e0e0e0
+			color: #930029
+			font-size: 12px
+			width: max-content
+			padding: 10px
+			height: 30px
+			font-weight: 600
+			display: flex
+			justify-content: center
+			align-items: center
+			margin-bottom: 20px
+			&:hover
+				border: 1px solid #930029
+				cursor: pointer
+		.content-right
+			.title-zone
+				padding-top: 20px
+				a
+					font-size: 12px
+					color: #111111
+					font-weight: 600
+					cursor: pointer
+					&:hover
+						color: #930029
+	// End right
 
 .other-news-detail
 	padding: 0 0 90px 0
@@ -159,7 +192,7 @@
 					display: -webkit-box
 					overflow: hidden
 					text-overflow: ellipsis
-					height: 80px
+					height: 75px
 					&:hover
 						color: #8f052d
 			.date
