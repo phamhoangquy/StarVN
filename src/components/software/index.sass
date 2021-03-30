@@ -37,6 +37,16 @@
 		display: flex
 		justify-content: center
 		align-items: center
+		a
+			display: block
+			max-width: 100%
+			max-height: 100%
+			width: 90px
+			height: 80px
+			img
+				width: 100%
+				height: 100%
+				object-fit: contain
 	.title
 		margin-top: 10px
 		a
@@ -45,6 +55,7 @@
 			display: flex
 			justify-content: center
 			align-items: center
+			text-align: center
 	.content-soft
 		@media screen and ( max-width: 1023px)
 			.title-zone
@@ -87,3 +98,20 @@
 					filter: brightness(0) invert(1)
 				span
 					color: #ffffff
+
+.software-page
+	.srcoll-menu
+		.menu-nav
+			// overflow-y: scroll
+			// scrollbar-width: thin
+			// scrollbar-color: #91002b
+			// &::-webkit-scrollbar
+			// 	background: #91002b
+			// 	width: 3px
+			// &::-webkit-scrollbar-track
+			// 	-webkit-box-shadow: inset 0 0 6px #f5f5f5
+			// 	background-color: #f5f5f5
+			// &::-webkit-scrollbar-thumb
+			// 	background-color: #91002b
+			ul
+				overflow: auto
