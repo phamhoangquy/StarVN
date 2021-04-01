@@ -309,11 +309,16 @@
 			padding-left: 3.5px
 			&::placeholder
 				color: #111111
+			&:focus
+				border-top: 0 !important
+				border-right: 0 !important
+				border-left: 0 !important
+				border-bottom: 1px solid #8f052d !important
 		textarea
 			background: none
 			border: 1px solid #e0e0e0
 			&:focus
-				border-color: #8f052d
+				border-color: #8f052d !important
 		select
 			display: flex
 			background: none
