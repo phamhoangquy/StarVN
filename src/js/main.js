@@ -340,7 +340,7 @@ function swiperInit() {
         slidesPerView: 1,
         effect: 'fade',
         autoplay: {
-            delay: 3000
+            delay: 15000
         },
         pagination: {
             el: ".home-banner-pagination",
