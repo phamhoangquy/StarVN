@@ -46,14 +46,18 @@
 						<div class="form-career-detail">
 							<div class="apply-form">
 								<div class="btn button-apply">
-									<img src="/Data/Sites/1/media/img/home/shape-icon.png" alt=""/>
-									<a href='javascript:void(0)' data-fancybox="" data-src="#form-apply">Get in touch</a>
+									<img src="/Data/Sites/1/media/img/home/shape-icon.png" alt="" />
+									<a href='javascript:void(0)' data-fancybox="" data-src="#form-apply">
+										<xsl:value-of disable-output-escaping="yes" select="SampleText1"></xsl:value-of>
+									</a>
 								</div>
 							</div>
-							
-							<div class="text">Or</div>
 
-							<a  class="upload-your-resume" href="javascript:;">
+							<div class="text">
+								<xsl:value-of disable-output-escaping="yes" select="SampleText2"></xsl:value-of>
+							</div>
+
+							<a class="upload-your-resume" href="javascript:;">
 								<xsl:if test="FileUrl!=''">
 									<xsl:attribute name="href">
 										<xsl:value-of select="FileUrl"></xsl:value-of>
@@ -61,8 +65,10 @@
 									<xsl:attribute name="download">
 									</xsl:attribute>
 								</xsl:if>
-								<img src="/Data/Sites/1/media/img/home/shape-icon.png" alt=""/>
-								<span>Upload your resume</span>
+								<img src="/Data/Sites/1/media/img/home/shape-icon.png" alt="" />
+								<span>
+									<xsl:value-of disable-output-escaping="yes" select="SampleText3"></xsl:value-of>
+								</span>
 							</a>
 						</div>
 						<div class="form-apply" id="form-apply" style="display: none">
@@ -75,7 +81,10 @@
 					</div>
 					<div class="col-lg-3">
 						<div class="card-title-right">
-							<h2>Related jobs</h2>
+							<h2>
+								<xsl:value-of disable-output-escaping="yes" select="RelatedJobText">
+								</xsl:value-of>
+							</h2>
 						</div>
 						<div class="card-body-right">
 							<xsl:apply-templates select="NewsOther"></xsl:apply-templates>

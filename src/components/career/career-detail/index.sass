@@ -111,7 +111,7 @@
 				background: #8f052d
 				border: 1px solid transparent
 				padding: 12px 0px
-				width: 180px
+				width: max-content
 				height: 50px
 				cursor: pointer
 				@media screen and ( max-width: 576px)
@@ -119,6 +119,7 @@
 				img
 					filter: brightness(0) invert(1)
 				a
+					padding-right: 20px
 					padding-left: 20px
 					color: #ffffff
 					text-transform: uppercase
@@ -132,7 +133,8 @@
 					a
 						color: #8f052d
 		.upload-your-resume
-			display: flex
+			display: none
+			// display: flex
 			align-items: center
 			background: #8f052d
 			border: 1px solid transparent
@@ -158,8 +160,9 @@
 				span
 					color: #8f052d
 		.text
+			display: none
 			padding: 0 15px
-			display: flex
+			// display: flex
 			justify-content: center
 			align-items: center
 			font-size: 18px
