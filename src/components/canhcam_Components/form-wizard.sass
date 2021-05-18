@@ -1,0 +1,257 @@
+.wrap-form
+	margin-top: 40px
+	@media screen and ( max-width: 576px)
+		padding: 15px
+	.form-group
+		margin: 0 0 30px 0
+	input[type='text'], textarea
+		width: 100%
+		padding: 13px 20px
+		font-size: 15px
+		border-color: transparent
+		color: unset
+		// color: #111111
+		// caret-color: $main
+		background: #f3f3f3
+		&::placeholder
+			color: #999999
+			font-size: 16px
+		&:focus
+			outline: none
+			border-color: #8f052d
+			border-width: 1px #8f052d
+			color: unset
+			border: 1px solid #8f052d
+	.qdropdown
+		padding-right: 0
+	select
+		display: flex
+		width: 100.7%
+		padding: 13px 0 13px 15px
+		background: #f3f3f3
+		border: none
+		color: #999999
+		margin-left: -10px
+	label
+		font-size: 16px
+		color: #111111
+		padding-bottom: 10px
+	textarea
+		height: 190px
+		&::placeholder
+			color: #111111
+	&>div
+		display: flex
+		flex-wrap: wrap
+		margin: 0 -5px
+		.qtext
+			padding: 0 5px
+			flex: 0 0 50%
+			margin-bottom: 20px
+			@media(max-width: 768px)
+				flex: 0 0 100%
+		.qparagraph
+			flex: 0 0 100%
+			padding: 0 5px
+			margin-bottom: 20px
+		span
+			color: red
+			font-size: 13px
+	.frm-captcha
+		display: flex
+		align-items: center
+		flex-direction: row-reverse
+		justify-content: flex-end
+		display: flex
+		.frm-captcha-input
+			width: calc(100% - 227px)
+			label
+				display: none
+		.RadCaptcha
+			width: auto!important
+			position: relative
+			span
+				position: absolute
+				bottom: 100%
+			&>div>div
+				align-items: center
+				display: flex
+				width: 227px
+		.rcRefreshImage
+			margin: 0 10px
+			font-size: 0
+			&:after
+				content: url('/Data/Sites/1/media/change.png')
+	.qupload
+		label
+			display: none
+	.frm-btnwrap
+		margin-top: 20px
+		@media screen and ( max-width: 1023px)
+			margin-left: 15px
+		label
+			display: none
+		.frm-btn-reset
+			display: none
+		.frm-file
+			margin-bottom: 20px
+			input
+				display: none
+			label
+				display: block
+				background: none
+				border: 1px solid #91002b
+				width: 200px
+				padding: 13px 30px
+				margin-right: 20px
+				color: #91002b
+				text-transform: uppercase
+				font-weight: 700
+				font-size: 14px
+				cursor: pointer
+			&:hover
+				label
+					background: #91002b
+					border: 1px solid transparent
+					color: #ffffff
+		.frm-btn
+			width: 180px
+			height: 45px
+			margin-right: -25px
+		input
+			width: 100%
+			padding: 13px 30px
+			background: none
+			text-transform: uppercase
+			color: #91002b
+			border: 1px solid #91002b
+			cursor: pointer
+			text-transform: uppercase
+			font-weight: 700
+			font-size: 14px
+			&:hover
+				background: #91002b
+				border: 1px solid transparent
+				color: #ffffff
+	@media(min-width: 768px)
+		.frm-captcha
+			width: 60%
+			float: left
+			margin-left: -15px
+		.frm-btnwrap
+			float: right
+			margin-top: 0
+			margin-right: 10px
+			
+.frm-btn-reset
+	display: none
+.frm-captcha
+	display: inline-flex
+	justify-content: flex-end
+	align-items: center
+	flex-direction: row-reverse
+	@media screen and ( max-width: 576px)
+		justify-content: flex-start
+		
+	img
+		height: 40px !important
+		max-width: auto
+		max-width: 150px
+		@media screen and ( max-width:1200px)
+			max-width: 150px
+			
+	@media screen and(max-width:576px)
+		flex-direction: column-reverse
+	.frm-captcha-input
+		margin-top: 0
+		padding: 0 60px 0 0 !important
+		margin: 0 !important
+		// order: 1
+		@media screen and ( max-width:576px)
+			padding: 0  !important
+			margin-left: 0
+			margin-top: 30px
+		label
+			display: none
+		input
+			margin-left: 20px
+			padding: 0 20px
+			margin-top: 0
+			height: 50px
+			text-transform: uppercase
+			width: 200px !important
+			background: none !important
+			border: 1px solid #999999
+			@media screen and ( max-width:1280px)
+				max-width: 200px
+			@media screen and ( max-width:1200px)
+				max-width: 150px
+			@media screen and ( max-width:1024px)
+				max-width: max-content
+			@media (max-width: 767.98px)
+				margin-left: 20px
+			@media (max-width: 576.98px)
+				margin-left: 0
+	.rcRefreshImage
+		position: absolute
+		opacity: 1
+		cursor: pointer
+		height: 0
+		width: 0
+		right: -5px
+		top: 5px
+		color: #ffffff
+		z-index: 0
+		font-size: 0
+		&:before
+			font-family: "Linearicons-Free"
+			position: absolute
+			top: -5px
+			right: 0
+			opacity: 1
+			z-index: 99
+			color: #999999
+			font-size: 30px
+			content: "\e860"
+			display: flex
+			justify-content: center
+			align-items: flex-start
+			@media screen and ( max-width: 767px)
+				right: 200px
+			@media screen and ( max-width:576px)
+				height: 50px
+				right: -15px
+@media screen and ( max-width:500px )
+	#ctl00_mainContent_ctl05_captcha_ctl00
+		display: none
+#ctl00_mainContent_ctl02_captcha_ctl01
+	position: relative
+#ctl00_mainContent_ctl06_btnReset,#ctl00_mainContent_ctl05_captcha_ctl00,#ctl00_mainContent_ctl08_captcha_ctl00,#ctl00_mainContent_ctl07_captcha_ctl00
+	display: none
+#ctl00_mainContent_ctl06_txtCaptcha
+	margin-left: 10px
+	@media screen and ( max-width: 576px)
+		margin: 0
+		
+#ctl00_mainContent_ctl06_captcha_CaptchaLinkButton
+	#text
+		display: none
+.RadCaptcha
+	@media screen and ( max-width:767.5px)
+		margin-left: 0
+	@media screen and ( max-width: 576px)
+		width: 100% !important
+		margin-bottom: 15px
+		margin-top: 20px
+	span
+		display: none
+	>div
+		>div
+			display: flex
+			position: relative
+			flex-direction: column-reverse
+			height: 40px !important
+			margin-top: 0
+			@media (max-width: 767.98px)
+				margin-right: 0
+				width: 180px
